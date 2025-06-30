@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'McccNotify_Example' do
+  pod 'McccNotify', :path => '../'
+
+  target 'McccNotify_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

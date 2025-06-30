@@ -1,0 +1,22 @@
+{
+  "name": "McccNotify",
+  "version": "0.1.0",
+  "summary": "A short description of McccNotify.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mancong@bertadata.com/McccNotify",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mancong@bertadata.com": "562863544@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/mancong@bertadata.com/McccNotify.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "McccNotify/Classes/**/*"
+}

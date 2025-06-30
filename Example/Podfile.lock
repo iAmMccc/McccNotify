@@ -1,0 +1,16 @@
+PODS:
+  - McccNotify (0.1.0)
+
+DEPENDENCIES:
+  - McccNotify (from `../`)
+
+EXTERNAL SOURCES:
+  McccNotify:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  McccNotify: 06a072aae03e64afcd9becb83ad5bd4af5731358
+
+PODFILE CHECKSUM: bb2304a82a7405972310758e9b02a8e3ce607a3f
+
+COCOAPODS: 1.15.2
