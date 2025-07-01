@@ -10,13 +10,14 @@
 		09FEB15E762F090E8E74B136828988F1 /* Pods-McccNotify_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D955B16FAA7CB8AA674DB5DE12DE9819 /* Pods-McccNotify_Tests-dummy.m */; };
 		278E99BF26B988A3B94AD18522B664E3 /* Pods-McccNotify_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44AFC468DED4D18D83E2BFA3211B3D9C /* Pods-McccNotify_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		385E5C970B7C979FC56BCB6D7D5DD12C /* Pods-McccNotify_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8F41B6F34B54532E0A0E452C9FC /* Pods-McccNotify_Example-dummy.m */; };
+		991323D52E13D08A009EBA06 /* McccNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991323D42E13D08A009EBA06 /* McccNotify.swift */; };
 		9FBC9DADC247478B8D1B0B7C09F34A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A6F276ADAC38144F97E95FBEF7EE021A /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693BFA049896E80CC132B12B2D0A78F3 /* ReplaceMe.swift */; };
+		A16C6312E42E4A7DE3AC82436592A0D0 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F8F3EF77B64200289F021FF8591A0 /* Authorization.swift */; };
 		BE841E868BD461910E6E8F74335D8DBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C3C346603D99D9B74BB5686F09FDC04A /* McccNotify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47072E03C1140ED9F1F93233F9600BF9 /* McccNotify-dummy.m */; };
-		D390E391A2431597A6D49FC4F6349598 /* McccNotify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A20DE6C1B4D47120CDA8F788DCBBDB55 /* McccNotify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D390E391A2431597A6D49FC4F6349598 /* McccNotify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FA8F101BB35339C575C4A81CEBE2B6 /* McccNotify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D90BD416F1F8F732F8688D7B34C2766F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		DDDCAFB49109D98F509D8F5E74A48E83 /* Pods-McccNotify_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CCB47451473A21642069C8F6196F5C /* Pods-McccNotify_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED4B2FBF076155BEF3CFF72BA87D9C20 /* McccNotify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA041179395A9EF339D80330F06D1876 /* McccNotify-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,38 +38,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08AA5E393D775B490134E20196D10309 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		07CA822489488E0ED2C28E21391F2B1B /* McccNotify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = McccNotify.modulemap; sourceTree = "<group>"; };
 		0A608C9E84B44AE8E72639033DC50AE3 /* Pods-McccNotify_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-McccNotify_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		12A5829FF24ADF8097ED3DE4F5670B36 /* McccNotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McccNotify.debug.xcconfig; sourceTree = "<group>"; };
 		248B2E4DA1522C741836B4000F327A5E /* Pods-McccNotify_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		32CDED2201582DF4EE0344ED79F05874 /* Pods-McccNotify_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-McccNotify_Example.release.xcconfig"; sourceTree = "<group>"; };
 		43D5A114A21BD94BC117FFA3C2EA896C /* Pods-McccNotify_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-McccNotify_Example.modulemap"; sourceTree = "<group>"; };
 		44AFC468DED4D18D83E2BFA3211B3D9C /* Pods-McccNotify_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-McccNotify_Tests-umbrella.h"; sourceTree = "<group>"; };
 		46CB2570B45C0879EF18E96B64B11E0A /* Pods-McccNotify_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Example-Info.plist"; sourceTree = "<group>"; };
-		47072E03C1140ED9F1F93233F9600BF9 /* McccNotify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McccNotify-dummy.m"; sourceTree = "<group>"; };
-		519BCB7DF795FF000CE73BF9B57D7085 /* McccNotify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = McccNotify.modulemap; sourceTree = "<group>"; };
-		59D55C48C3001C6CA8CB0A1832863C2A /* McccNotify-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "McccNotify-Info.plist"; sourceTree = "<group>"; };
-		5D4CEF253B0473B97729C1ECF2BA6363 /* McccNotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McccNotify.debug.xcconfig; sourceTree = "<group>"; };
+		4EBDBFF9AA3C43A02D3339790CA7DB81 /* McccNotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McccNotify.release.xcconfig; sourceTree = "<group>"; };
 		5E5F3413FB6BCA6F27723488AAC1A5E7 /* Pods-McccNotify_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-McccNotify_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		640E92101E542D223D8451EAAE09A5D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		693BFA049896E80CC132B12B2D0A78F3 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = McccNotify/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7C2EF96F83E3A30ABF97F8DEDB9ED5B9 /* McccNotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McccNotify.release.xcconfig; sourceTree = "<group>"; };
-		893E242D41EC6A8F5A75DB11B716205A /* Pods-McccNotify_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-McccNotify_Example"; path = Pods_McccNotify_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A20DE6C1B4D47120CDA8F788DCBBDB55 /* McccNotify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McccNotify-umbrella.h"; sourceTree = "<group>"; };
-		AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods-McccNotify_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-McccNotify_Tests"; path = Pods_McccNotify_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		893E242D41EC6A8F5A75DB11B716205A /* Pods_McccNotify_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		914F8F3EF77B64200289F021FF8591A0 /* Authorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorization.swift; path = McccNotify/Classes/Authorization.swift; sourceTree = "<group>"; };
+		991323D42E13D08A009EBA06 /* McccNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = McccNotify.swift; path = McccNotify/Classes/McccNotify.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods_McccNotify_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB188B1641257B451E56A387FC047523 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		ACE5E88C3A5AC9F5A22526B782E2AA79 /* Pods-McccNotify_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Tests-Info.plist"; sourceTree = "<group>"; };
 		AF289E1B32C182B55183FB81668BA212 /* Pods-McccNotify_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-McccNotify_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BCA502B44990E35297CD9040C9D1E87F /* Pods-McccNotify_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-McccNotify_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF75656128ECB49B59E954EBA36EDB2B /* McccNotify.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = McccNotify.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF89D3E8151528A7890CF6861788C67A /* Pods-McccNotify_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C0FA8F101BB35339C575C4A81CEBE2B6 /* McccNotify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McccNotify-umbrella.h"; sourceTree = "<group>"; };
 		C57A4DF63DA369937036C7949A87B666 /* Pods-McccNotify_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-McccNotify_Tests.modulemap"; sourceTree = "<group>"; };
+		C9E11D33EFA508FA546688ACB7C2C6AC /* McccNotify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McccNotify-prefix.pch"; sourceTree = "<group>"; };
 		CE1EAFBB59AAC2EB4D5286F81DD5005D /* Pods-McccNotify_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-McccNotify_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D29365680BCA958E992595FE66DFA9DF /* McccNotify */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = McccNotify; path = McccNotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29365680BCA958E992595FE66DFA9DF /* McccNotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = McccNotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CCB47451473A21642069C8F6196F5C /* Pods-McccNotify_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-McccNotify_Example-umbrella.h"; sourceTree = "<group>"; };
-		D5FBD382546D95EA34FE70CC95401E46 /* McccNotify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McccNotify-prefix.pch"; sourceTree = "<group>"; };
 		D955B16FAA7CB8AA674DB5DE12DE9819 /* Pods-McccNotify_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-McccNotify_Tests-dummy.m"; sourceTree = "<group>"; };
+		DA041179395A9EF339D80330F06D1876 /* McccNotify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McccNotify-dummy.m"; sourceTree = "<group>"; };
 		DB44EE66014B65A355B44DFDA54D1596 /* Pods-McccNotify_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-McccNotify_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DFDCD6032DFCC2EA0EEC548DA70A5D14 /* McccNotify.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = McccNotify.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DF152A5B090C38A5A61A1BC75D097B58 /* McccNotify-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "McccNotify-Info.plist"; sourceTree = "<group>"; };
+		E25BCB1D44633F27D73D11346A183EF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F1C5D8F41B6F34B54532E0A0E452C9FC /* Pods-McccNotify_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-McccNotify_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,16 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A697E2767335837C0912D805B33BC45 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				640E92101E542D223D8451EAAE09A5D5 /* LICENSE */,
-				DFDCD6032DFCC2EA0EEC548DA70A5D14 /* McccNotify.podspec */,
-				08AA5E393D775B490134E20196D10309 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		37345572A9EA0A4A059BDD30DDBD4A0A /* Pods-McccNotify_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,21 +135,6 @@
 			path = "Target Support Files/Pods-McccNotify_Tests";
 			sourceTree = "<group>";
 		};
-		5763F106FA885E26638038C80BC4C32C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				519BCB7DF795FF000CE73BF9B57D7085 /* McccNotify.modulemap */,
-				47072E03C1140ED9F1F93233F9600BF9 /* McccNotify-dummy.m */,
-				59D55C48C3001C6CA8CB0A1832863C2A /* McccNotify-Info.plist */,
-				D5FBD382546D95EA34FE70CC95401E46 /* McccNotify-prefix.pch */,
-				A20DE6C1B4D47120CDA8F788DCBBDB55 /* McccNotify-umbrella.h */,
-				5D4CEF253B0473B97729C1ECF2BA6363 /* McccNotify.debug.xcconfig */,
-				7C2EF96F83E3A30ABF97F8DEDB9ED5B9 /* McccNotify.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/McccNotify";
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,19 +146,30 @@
 		5BB2DAA9C646D0C33FC0A51DC63F291B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D29365680BCA958E992595FE66DFA9DF /* McccNotify */,
-				893E242D41EC6A8F5A75DB11B716205A /* Pods-McccNotify_Example */,
-				AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods-McccNotify_Tests */,
+				D29365680BCA958E992595FE66DFA9DF /* McccNotify.framework */,
+				893E242D41EC6A8F5A75DB11B716205A /* Pods_McccNotify_Example.framework */,
+				AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods_McccNotify_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66189763F704BCF8FDEE7FA9F63AE85C /* McccNotify */ = {
+		65B9C47D975417237FD9C06546D5B969 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				693BFA049896E80CC132B12B2D0A78F3 /* ReplaceMe.swift */,
-				2A697E2767335837C0912D805B33BC45 /* Pod */,
-				5763F106FA885E26638038C80BC4C32C /* Support Files */,
+				AB188B1641257B451E56A387FC047523 /* LICENSE */,
+				BF75656128ECB49B59E954EBA36EDB2B /* McccNotify.podspec */,
+				E25BCB1D44633F27D73D11346A183EF0 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		852DD61739B7ECD2A465304F5FD54244 /* McccNotify */ = {
+			isa = PBXGroup;
+			children = (
+				914F8F3EF77B64200289F021FF8591A0 /* Authorization.swift */,
+				65B9C47D975417237FD9C06546D5B969 /* Pod */,
+				FF21C8F2FC7A49040297451D56DB79E3 /* Support Files */,
+				991323D42E13D08A009EBA06 /* McccNotify.swift */,
 			);
 			name = McccNotify;
 			path = ../..;
@@ -190,7 +178,7 @@
 		9B0C88A5642EFE2CB1E8BF71C280FDCE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				66189763F704BCF8FDEE7FA9F63AE85C /* McccNotify */,
+				852DD61739B7ECD2A465304F5FD54244 /* McccNotify */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -221,6 +209,21 @@
 				47960185F72E3140D1D9921763C2D2AE /* Pods-McccNotify_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FF21C8F2FC7A49040297451D56DB79E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				07CA822489488E0ED2C28E21391F2B1B /* McccNotify.modulemap */,
+				DA041179395A9EF339D80330F06D1876 /* McccNotify-dummy.m */,
+				DF152A5B090C38A5A61A1BC75D097B58 /* McccNotify-Info.plist */,
+				C9E11D33EFA508FA546688ACB7C2C6AC /* McccNotify-prefix.pch */,
+				C0FA8F101BB35339C575C4A81CEBE2B6 /* McccNotify-umbrella.h */,
+				12A5829FF24ADF8097ED3DE4F5670B36 /* McccNotify.debug.xcconfig */,
+				4EBDBFF9AA3C43A02D3339790CA7DB81 /* McccNotify.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/McccNotify";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +261,7 @@
 			buildConfigurationList = D38500A7D49E973366D4EE67D4676353 /* Build configuration list for PBXNativeTarget "McccNotify" */;
 			buildPhases = (
 				5DC9CEEA9BBC766B641307232B2548DF /* Headers */,
-				4D18BF6FE9DCDEA235C1793F24672408 /* Sources */,
+				B952FF3DCFCF42AA71F9D55DF2E0BCD4 /* Sources */,
 				479B55F1DC8A4F2936E9DCC94801B549 /* Frameworks */,
 				6777F978FBB90F73F7F118A809D09707 /* Resources */,
 			);
@@ -268,7 +271,7 @@
 			);
 			name = McccNotify;
 			productName = McccNotify;
-			productReference = D29365680BCA958E992595FE66DFA9DF /* McccNotify */;
+			productReference = D29365680BCA958E992595FE66DFA9DF /* McccNotify.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D1B430407B3D8D3C2C403BDBE5D04582 /* Pods-McccNotify_Example */ = {
@@ -287,7 +290,7 @@
 			);
 			name = "Pods-McccNotify_Example";
 			productName = Pods_McccNotify_Example;
-			productReference = 893E242D41EC6A8F5A75DB11B716205A /* Pods-McccNotify_Example */;
+			productReference = 893E242D41EC6A8F5A75DB11B716205A /* Pods_McccNotify_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EDE023924C5CD4D054A33455B7AFFF89 /* Pods-McccNotify_Tests */ = {
@@ -306,7 +309,7 @@
 			);
 			name = "Pods-McccNotify_Tests";
 			productName = Pods_McccNotify_Tests;
-			productReference = AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods-McccNotify_Tests */;
+			productReference = AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods_McccNotify_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -371,20 +374,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D18BF6FE9DCDEA235C1793F24672408 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3C346603D99D9B74BB5686F09FDC04A /* McccNotify-dummy.m in Sources */,
-				A6F276ADAC38144F97E95FBEF7EE021A /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B1F20089349CB7219975E452108EA285 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				385E5C970B7C979FC56BCB6D7D5DD12C /* Pods-McccNotify_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B952FF3DCFCF42AA71F9D55DF2E0BCD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16C6312E42E4A7DE3AC82436592A0D0 /* Authorization.swift in Sources */,
+				ED4B2FBF076155BEF3CFF72BA87D9C20 /* McccNotify-dummy.m in Sources */,
+				991323D52E13D08A009EBA06 /* McccNotify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,75 +410,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06E7A5E1E394A667C8F19CC9D033CD42 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D4CEF253B0473B97729C1ECF2BA6363 /* McccNotify.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/McccNotify/McccNotify-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/McccNotify/McccNotify-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/McccNotify/McccNotify.modulemap";
-				PRODUCT_MODULE_NAME = McccNotify;
-				PRODUCT_NAME = McccNotify;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		14AC595D19A684BC0337D1CBBB64A26D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCA502B44990E35297CD9040C9D1E87F /* Pods-McccNotify_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-McccNotify_Tests/Pods-McccNotify_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-McccNotify_Tests/Pods-McccNotify_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		561D642102CC347279E6526A2F72D4B2 /* Release */ = {
+		2CCFC20E16F2D9776EDEF104BD2F59F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32CDED2201582DF4EE0344ED79F05874 /* Pods-McccNotify_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -486,7 +427,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example.modulemap";
@@ -504,73 +445,44 @@
 			};
 			name = Release;
 		};
-		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+		30164BD1C795E147A9BDF27DDE8CA184 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A5829FF24ADF8097ED3DE4F5670B36 /* McccNotify.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/McccNotify/McccNotify-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/McccNotify/McccNotify-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/McccNotify/McccNotify.modulemap";
+				PRODUCT_MODULE_NAME = McccNotify;
+				PRODUCT_NAME = McccNotify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		B2294FF060D5D6392540C00FA9F6CE9F /* Debug */ = {
+		48CAC9DD6F8745F9C9478194B75D9E6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A608C9E84B44AE8E72639033DC50AE3 /* Pods-McccNotify_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -582,7 +494,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example.modulemap";
@@ -599,7 +511,41 @@
 			};
 			name = Debug;
 		};
-		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+		8B5C2F63733A933CC601E8D5B1230DF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA502B44990E35297CD9040C9D1E87F /* Pods-McccNotify_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-McccNotify_Tests/Pods-McccNotify_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-McccNotify_Tests/Pods-McccNotify_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -652,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -665,11 +611,106 @@
 			};
 			name = Debug;
 		};
-		D6EE07660AC4D3E97E83AEC8D4879CE4 /* Release */ = {
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A37006DE8431D67AAD1AB896966601D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EBDBFF9AA3C43A02D3339790CA7DB81 /* McccNotify.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/McccNotify/McccNotify-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/McccNotify/McccNotify-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/McccNotify/McccNotify.modulemap";
+				PRODUCT_MODULE_NAME = McccNotify;
+				PRODUCT_NAME = McccNotify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F93D4C1E0C0F2CCD5DD9CD456680EDAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AF289E1B32C182B55183FB81668BA212 /* Pods-McccNotify_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -681,7 +722,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-McccNotify_Tests/Pods-McccNotify_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-McccNotify_Tests/Pods-McccNotify_Tests.modulemap";
@@ -699,46 +740,14 @@
 			};
 			name = Release;
 		};
-		F68A93CCD264C8160822D14BB87E0EEA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C2EF96F83E3A30ABF97F8DEDB9ED5B9 /* McccNotify.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/McccNotify/McccNotify-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/McccNotify/McccNotify-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/McccNotify/McccNotify.modulemap";
-				PRODUCT_MODULE_NAME = McccNotify;
-				PRODUCT_NAME = McccNotify;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		47F076D0412BA13089731B52B0F1ED58 /* Build configuration list for PBXNativeTarget "Pods-McccNotify_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2294FF060D5D6392540C00FA9F6CE9F /* Debug */,
-				561D642102CC347279E6526A2F72D4B2 /* Release */,
+				48CAC9DD6F8745F9C9478194B75D9E6C /* Debug */,
+				2CCFC20E16F2D9776EDEF104BD2F59F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -746,8 +755,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
-				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -755,8 +764,8 @@
 		51722C21B5A62BE56E43D26518DB2B27 /* Build configuration list for PBXNativeTarget "Pods-McccNotify_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14AC595D19A684BC0337D1CBBB64A26D /* Debug */,
-				D6EE07660AC4D3E97E83AEC8D4879CE4 /* Release */,
+				8B5C2F63733A933CC601E8D5B1230DF0 /* Debug */,
+				F93D4C1E0C0F2CCD5DD9CD456680EDAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -764,8 +773,8 @@
 		D38500A7D49E973366D4EE67D4676353 /* Build configuration list for PBXNativeTarget "McccNotify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06E7A5E1E394A667C8F19CC9D033CD42 /* Debug */,
-				F68A93CCD264C8160822D14BB87E0EEA /* Release */,
+				30164BD1C795E147A9BDF27DDE8CA184 /* Debug */,
+				A37006DE8431D67AAD1AB896966601D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

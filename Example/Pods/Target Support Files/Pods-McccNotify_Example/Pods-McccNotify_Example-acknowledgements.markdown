@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## McccNotify
 
-Copyright (c) 2025 mancong@bertadata.com <562863544@qq.com>
+Copyright (c) 2025 Mccc <562863544@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
