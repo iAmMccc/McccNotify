@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  McccNotify: d068972b2d44cd156fe5aeddc51fa6987cd7888c
+  McccNotify: cfa8af41fcc0a8e55415152fadf44358e0e10439
 
 PODFILE CHECKSUM: d4467ceab80e2fb238c1b32b3a42bb3f00749898
 

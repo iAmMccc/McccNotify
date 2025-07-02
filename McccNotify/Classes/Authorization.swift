@@ -8,7 +8,7 @@ extension McccNotify {
         
         /// 获取当前通知权限状态
         /// - Parameter completion: 回调返回当前的 `UNAuthorizationStatus`
-        public static func getAuthorizationStatus(completion: @escaping (UNAuthorizationStatus) -> Void) {
+        public static func getStatus(completion: @escaping (UNAuthorizationStatus) -> Void) {
             UNUserNotificationCenter.current().getNotificationSettings { settings in
                 DispatchQueue.main.async {
                     completion(settings.authorizationStatus)
@@ -20,7 +20,7 @@ extension McccNotify {
         /// - Parameters:
         ///   - options: 权限选项，默认包含 `.alert`, `.sound`, `.badge`
         ///   - completion: 授权结果回调，返回是否授权成功及可能的错误
-        public static func requestAuthorization(
+        public static func request(
             options: UNAuthorizationOptions = [.alert, .sound, .badge],
             completion: @escaping (Bool, Error?) -> Void
         ) {

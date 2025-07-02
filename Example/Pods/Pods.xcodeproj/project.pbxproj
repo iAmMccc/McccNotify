@@ -9,77 +9,77 @@
 /* Begin PBXBuildFile section */
 		09FEB15E762F090E8E74B136828988F1 /* Pods-McccNotify_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D955B16FAA7CB8AA674DB5DE12DE9819 /* Pods-McccNotify_Tests-dummy.m */; };
 		278E99BF26B988A3B94AD18522B664E3 /* Pods-McccNotify_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44AFC468DED4D18D83E2BFA3211B3D9C /* Pods-McccNotify_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D1EFA1C41DD4B7DA34B11444F50FEB5 /* McccNotify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57991B353C4AF919D3F7CF0691E14BC8 /* McccNotify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		385E5C970B7C979FC56BCB6D7D5DD12C /* Pods-McccNotify_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8F41B6F34B54532E0A0E452C9FC /* Pods-McccNotify_Example-dummy.m */; };
-		991323D52E13D08A009EBA06 /* McccNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991323D42E13D08A009EBA06 /* McccNotify.swift */; };
+		70FB59627AB27A92657F336652765521 /* McccNotify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E789AC2A0867E978FB7B6AFB023298F /* McccNotify-dummy.m */; };
+		7A2E90CCF943D2FB6FDDDF09BD1B31CD /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B6FE74AE60FF0330B7607B0EA06D4 /* Authorization.swift */; };
+		91F2EB29D06D3E6E0E406C4EF8FD5AA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9FBC9DADC247478B8D1B0B7C09F34A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A16C6312E42E4A7DE3AC82436592A0D0 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F8F3EF77B64200289F021FF8591A0 /* Authorization.swift */; };
-		BE841E868BD461910E6E8F74335D8DBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D390E391A2431597A6D49FC4F6349598 /* McccNotify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FA8F101BB35339C575C4A81CEBE2B6 /* McccNotify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6819552F3CED207204D061FD4DA117F /* McccNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC21081D400764E3262D94BBEB65B5 /* McccNotify.swift */; };
 		D90BD416F1F8F732F8688D7B34C2766F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		DDDCAFB49109D98F509D8F5E74A48E83 /* Pods-McccNotify_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CCB47451473A21642069C8F6196F5C /* Pods-McccNotify_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED4B2FBF076155BEF3CFF72BA87D9C20 /* McccNotify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA041179395A9EF339D80330F06D1876 /* McccNotify-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0B0F036BD2D87F51093BBD8C06E6327B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D1B430407B3D8D3C2C403BDBE5D04582;
-			remoteInfo = "Pods-McccNotify_Example";
-		};
-		DE563BB60639EF49B9B09447196031B0 /* PBXContainerItemProxy */ = {
+		C002FEB76B232847592CC31FA7E9D300 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C95AD6EAEC91A13A27D5DF1BE9ED4C0A;
 			remoteInfo = McccNotify;
 		};
+		DD6B5404B230E4DF8D1E07AC52962111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1B430407B3D8D3C2C403BDBE5D04582;
+			remoteInfo = "Pods-McccNotify_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07CA822489488E0ED2C28E21391F2B1B /* McccNotify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = McccNotify.modulemap; sourceTree = "<group>"; };
 		0A608C9E84B44AE8E72639033DC50AE3 /* Pods-McccNotify_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-McccNotify_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		12A5829FF24ADF8097ED3DE4F5670B36 /* McccNotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McccNotify.debug.xcconfig; sourceTree = "<group>"; };
 		248B2E4DA1522C741836B4000F327A5E /* Pods-McccNotify_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		28DC21081D400764E3262D94BBEB65B5 /* McccNotify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McccNotify.swift; path = McccNotify/Classes/McccNotify.swift; sourceTree = "<group>"; };
+		2A3C76504CCED7F726C3C2641B785667 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		32CDED2201582DF4EE0344ED79F05874 /* Pods-McccNotify_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-McccNotify_Example.release.xcconfig"; sourceTree = "<group>"; };
 		43D5A114A21BD94BC117FFA3C2EA896C /* Pods-McccNotify_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-McccNotify_Example.modulemap"; sourceTree = "<group>"; };
 		44AFC468DED4D18D83E2BFA3211B3D9C /* Pods-McccNotify_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-McccNotify_Tests-umbrella.h"; sourceTree = "<group>"; };
 		46CB2570B45C0879EF18E96B64B11E0A /* Pods-McccNotify_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Example-Info.plist"; sourceTree = "<group>"; };
-		4EBDBFF9AA3C43A02D3339790CA7DB81 /* McccNotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McccNotify.release.xcconfig; sourceTree = "<group>"; };
+		4B4B6FE74AE60FF0330B7607B0EA06D4 /* Authorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorization.swift; path = McccNotify/Classes/Authorization.swift; sourceTree = "<group>"; };
+		57991B353C4AF919D3F7CF0691E14BC8 /* McccNotify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McccNotify-umbrella.h"; sourceTree = "<group>"; };
 		5E5F3413FB6BCA6F27723488AAC1A5E7 /* Pods-McccNotify_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-McccNotify_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61ED65687175CC9D9AC82D01EE405D8E /* McccNotify-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "McccNotify-Info.plist"; sourceTree = "<group>"; };
+		6215260C00CC13F2503D7654063B1E58 /* McccNotify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McccNotify-prefix.pch"; sourceTree = "<group>"; };
+		638DC4F99ADF6B442020DB5B2CA9CB88 /* McccNotify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = McccNotify.modulemap; sourceTree = "<group>"; };
+		674AD34376A490E106A074788D3F003B /* McccNotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McccNotify.debug.xcconfig; sourceTree = "<group>"; };
+		6798FE9F7A878BA1B6F0A77F0B69C668 /* McccNotify.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = McccNotify.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		893E242D41EC6A8F5A75DB11B716205A /* Pods_McccNotify_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		914F8F3EF77B64200289F021FF8591A0 /* Authorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorization.swift; path = McccNotify/Classes/Authorization.swift; sourceTree = "<group>"; };
-		991323D42E13D08A009EBA06 /* McccNotify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = McccNotify.swift; path = McccNotify/Classes/McccNotify.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods_McccNotify_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB188B1641257B451E56A387FC047523 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7B0BE244D132EAEB67665FCF356C97E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7E789AC2A0867E978FB7B6AFB023298F /* McccNotify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McccNotify-dummy.m"; sourceTree = "<group>"; };
+		893E242D41EC6A8F5A75DB11B716205A /* Pods-McccNotify_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-McccNotify_Example"; path = Pods_McccNotify_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods-McccNotify_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-McccNotify_Tests"; path = Pods_McccNotify_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE5E88C3A5AC9F5A22526B782E2AA79 /* Pods-McccNotify_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Tests-Info.plist"; sourceTree = "<group>"; };
 		AF289E1B32C182B55183FB81668BA212 /* Pods-McccNotify_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-McccNotify_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BCA502B44990E35297CD9040C9D1E87F /* Pods-McccNotify_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-McccNotify_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF75656128ECB49B59E954EBA36EDB2B /* McccNotify.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = McccNotify.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF89D3E8151528A7890CF6861788C67A /* Pods-McccNotify_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C0FA8F101BB35339C575C4A81CEBE2B6 /* McccNotify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McccNotify-umbrella.h"; sourceTree = "<group>"; };
 		C57A4DF63DA369937036C7949A87B666 /* Pods-McccNotify_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-McccNotify_Tests.modulemap"; sourceTree = "<group>"; };
-		C9E11D33EFA508FA546688ACB7C2C6AC /* McccNotify-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McccNotify-prefix.pch"; sourceTree = "<group>"; };
 		CE1EAFBB59AAC2EB4D5286F81DD5005D /* Pods-McccNotify_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-McccNotify_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D29365680BCA958E992595FE66DFA9DF /* McccNotify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = McccNotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29365680BCA958E992595FE66DFA9DF /* McccNotify */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = McccNotify; path = McccNotify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CCB47451473A21642069C8F6196F5C /* Pods-McccNotify_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-McccNotify_Example-umbrella.h"; sourceTree = "<group>"; };
 		D955B16FAA7CB8AA674DB5DE12DE9819 /* Pods-McccNotify_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-McccNotify_Tests-dummy.m"; sourceTree = "<group>"; };
-		DA041179395A9EF339D80330F06D1876 /* McccNotify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McccNotify-dummy.m"; sourceTree = "<group>"; };
 		DB44EE66014B65A355B44DFDA54D1596 /* Pods-McccNotify_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-McccNotify_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF152A5B090C38A5A61A1BC75D097B58 /* McccNotify-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "McccNotify-Info.plist"; sourceTree = "<group>"; };
-		E25BCB1D44633F27D73D11346A183EF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F1C5D8F41B6F34B54532E0A0E452C9FC /* Pods-McccNotify_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-McccNotify_Example-dummy.m"; sourceTree = "<group>"; };
+		F1DA52A480DC5E0B256A96B3A2F27AEA /* McccNotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McccNotify.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		479B55F1DC8A4F2936E9DCC94801B549 /* Frameworks */ = {
+		4759D6ADC7574A7CF814A8C861196632 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE841E868BD461910E6E8F74335D8DBD /* Foundation.framework in Frameworks */,
+				91F2EB29D06D3E6E0E406C4EF8FD5AA5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C7E20382F495FE5EE6E83715B6157DA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0ADD71A4BC7EA12BE516FFF0630095D /* McccNotify */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		37345572A9EA0A4A059BDD30DDBD4A0A /* Pods-McccNotify_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,48 +154,18 @@
 		5BB2DAA9C646D0C33FC0A51DC63F291B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D29365680BCA958E992595FE66DFA9DF /* McccNotify.framework */,
-				893E242D41EC6A8F5A75DB11B716205A /* Pods_McccNotify_Example.framework */,
-				AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods_McccNotify_Tests.framework */,
+				D29365680BCA958E992595FE66DFA9DF /* McccNotify */,
+				893E242D41EC6A8F5A75DB11B716205A /* Pods-McccNotify_Example */,
+				AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods-McccNotify_Tests */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		65B9C47D975417237FD9C06546D5B969 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				AB188B1641257B451E56A387FC047523 /* LICENSE */,
-				BF75656128ECB49B59E954EBA36EDB2B /* McccNotify.podspec */,
-				E25BCB1D44633F27D73D11346A183EF0 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		852DD61739B7ECD2A465304F5FD54244 /* McccNotify */ = {
-			isa = PBXGroup;
-			children = (
-				914F8F3EF77B64200289F021FF8591A0 /* Authorization.swift */,
-				65B9C47D975417237FD9C06546D5B969 /* Pod */,
-				FF21C8F2FC7A49040297451D56DB79E3 /* Support Files */,
-				991323D42E13D08A009EBA06 /* McccNotify.swift */,
-			);
-			name = McccNotify;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		9B0C88A5642EFE2CB1E8BF71C280FDCE /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				852DD61739B7ECD2A465304F5FD54244 /* McccNotify */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9B0C88A5642EFE2CB1E8BF71C280FDCE /* Development Pods */,
+				2C7E20382F495FE5EE6E83715B6157DA /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				5BB2DAA9C646D0C33FC0A51DC63F291B /* Products */,
 				EBAE6B5CA3B73A906862115E2764AF17 /* Targets Support Files */,
@@ -202,6 +180,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D9CF498A90195956332C757D16BD428B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				638DC4F99ADF6B442020DB5B2CA9CB88 /* McccNotify.modulemap */,
+				7E789AC2A0867E978FB7B6AFB023298F /* McccNotify-dummy.m */,
+				61ED65687175CC9D9AC82D01EE405D8E /* McccNotify-Info.plist */,
+				6215260C00CC13F2503D7654063B1E58 /* McccNotify-prefix.pch */,
+				57991B353C4AF919D3F7CF0691E14BC8 /* McccNotify-umbrella.h */,
+				674AD34376A490E106A074788D3F003B /* McccNotify.debug.xcconfig */,
+				F1DA52A480DC5E0B256A96B3A2F27AEA /* McccNotify.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/McccNotify";
+			sourceTree = "<group>";
+		};
+		E0ADD71A4BC7EA12BE516FFF0630095D /* McccNotify */ = {
+			isa = PBXGroup;
+			children = (
+				4B4B6FE74AE60FF0330B7607B0EA06D4 /* Authorization.swift */,
+				28DC21081D400764E3262D94BBEB65B5 /* McccNotify.swift */,
+				FD70CD0D79CF012C162C7787C1261BE5 /* Pod */,
+				D9CF498A90195956332C757D16BD428B /* Support Files */,
+			);
+			name = McccNotify;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		EBAE6B5CA3B73A906862115E2764AF17 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,29 +216,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FF21C8F2FC7A49040297451D56DB79E3 /* Support Files */ = {
+		FD70CD0D79CF012C162C7787C1261BE5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				07CA822489488E0ED2C28E21391F2B1B /* McccNotify.modulemap */,
-				DA041179395A9EF339D80330F06D1876 /* McccNotify-dummy.m */,
-				DF152A5B090C38A5A61A1BC75D097B58 /* McccNotify-Info.plist */,
-				C9E11D33EFA508FA546688ACB7C2C6AC /* McccNotify-prefix.pch */,
-				C0FA8F101BB35339C575C4A81CEBE2B6 /* McccNotify-umbrella.h */,
-				12A5829FF24ADF8097ED3DE4F5670B36 /* McccNotify.debug.xcconfig */,
-				4EBDBFF9AA3C43A02D3339790CA7DB81 /* McccNotify.release.xcconfig */,
+				2A3C76504CCED7F726C3C2641B785667 /* LICENSE */,
+				6798FE9F7A878BA1B6F0A77F0B69C668 /* McccNotify.podspec */,
+				7B0BE244D132EAEB67665FCF356C97E5 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/McccNotify";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5DC9CEEA9BBC766B641307232B2548DF /* Headers */ = {
+		6B7F82A2CB069189130DF3BB57C5C078 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D390E391A2431597A6D49FC4F6349598 /* McccNotify-umbrella.h in Headers */,
+				2D1EFA1C41DD4B7DA34B11444F50FEB5 /* McccNotify-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,12 +258,12 @@
 /* Begin PBXNativeTarget section */
 		C95AD6EAEC91A13A27D5DF1BE9ED4C0A /* McccNotify */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D38500A7D49E973366D4EE67D4676353 /* Build configuration list for PBXNativeTarget "McccNotify" */;
+			buildConfigurationList = 3DC599C349121B666C5A21A1EDB2E6DF /* Build configuration list for PBXNativeTarget "McccNotify" */;
 			buildPhases = (
-				5DC9CEEA9BBC766B641307232B2548DF /* Headers */,
-				B952FF3DCFCF42AA71F9D55DF2E0BCD4 /* Sources */,
-				479B55F1DC8A4F2936E9DCC94801B549 /* Frameworks */,
-				6777F978FBB90F73F7F118A809D09707 /* Resources */,
+				6B7F82A2CB069189130DF3BB57C5C078 /* Headers */,
+				72571B28A1831C366870BDD2D3EBA9D0 /* Sources */,
+				4759D6ADC7574A7CF814A8C861196632 /* Frameworks */,
+				41E5E3A85FEF5B17A9F9EE89F13262BE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -271,7 +271,7 @@
 			);
 			name = McccNotify;
 			productName = McccNotify;
-			productReference = D29365680BCA958E992595FE66DFA9DF /* McccNotify.framework */;
+			productReference = D29365680BCA958E992595FE66DFA9DF /* McccNotify */;
 			productType = "com.apple.product-type.framework";
 		};
 		D1B430407B3D8D3C2C403BDBE5D04582 /* Pods-McccNotify_Example */ = {
@@ -286,11 +286,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				422ADFC4C6DEA60A0DB1A24553502B4B /* PBXTargetDependency */,
+				6B4933363992347F0E934860938BD849 /* PBXTargetDependency */,
 			);
 			name = "Pods-McccNotify_Example";
 			productName = Pods_McccNotify_Example;
-			productReference = 893E242D41EC6A8F5A75DB11B716205A /* Pods_McccNotify_Example.framework */;
+			productReference = 893E242D41EC6A8F5A75DB11B716205A /* Pods-McccNotify_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		EDE023924C5CD4D054A33455B7AFFF89 /* Pods-McccNotify_Tests */ = {
@@ -305,11 +305,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				2D2E94BFE647E70825F183110BF8829F /* PBXTargetDependency */,
+				520555999C3CEFAACC491BB8FD2D9766 /* PBXTargetDependency */,
 			);
 			name = "Pods-McccNotify_Tests";
 			productName = Pods_McccNotify_Tests;
-			productReference = AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods_McccNotify_Tests.framework */;
+			productReference = AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods-McccNotify_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -342,7 +342,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6777F978FBB90F73F7F118A809D09707 /* Resources */ = {
+		41E5E3A85FEF5B17A9F9EE89F13262BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,6 +374,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72571B28A1831C366870BDD2D3EBA9D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2E90CCF943D2FB6FDDDF09BD1B31CD /* Authorization.swift in Sources */,
+				C6819552F3CED207204D061FD4DA117F /* McccNotify.swift in Sources */,
+				70FB59627AB27A92657F336652765521 /* McccNotify-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B1F20089349CB7219975E452108EA285 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,34 +392,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B952FF3DCFCF42AA71F9D55DF2E0BCD4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A16C6312E42E4A7DE3AC82436592A0D0 /* Authorization.swift in Sources */,
-				ED4B2FBF076155BEF3CFF72BA87D9C20 /* McccNotify-dummy.m in Sources */,
-				991323D52E13D08A009EBA06 /* McccNotify.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D2E94BFE647E70825F183110BF8829F /* PBXTargetDependency */ = {
+		520555999C3CEFAACC491BB8FD2D9766 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-McccNotify_Example";
 			target = D1B430407B3D8D3C2C403BDBE5D04582 /* Pods-McccNotify_Example */;
-			targetProxy = 0B0F036BD2D87F51093BBD8C06E6327B /* PBXContainerItemProxy */;
+			targetProxy = DD6B5404B230E4DF8D1E07AC52962111 /* PBXContainerItemProxy */;
 		};
-		422ADFC4C6DEA60A0DB1A24553502B4B /* PBXTargetDependency */ = {
+		6B4933363992347F0E934860938BD849 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = McccNotify;
 			target = C95AD6EAEC91A13A27D5DF1BE9ED4C0A /* McccNotify */;
-			targetProxy = DE563BB60639EF49B9B09447196031B0 /* PBXContainerItemProxy */;
+			targetProxy = C002FEB76B232847592CC31FA7E9D300 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1504833CAE1D85B900764E8508DE8AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DA52A480DC5E0B256A96B3A2F27AEA /* McccNotify.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/McccNotify/McccNotify-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/McccNotify/McccNotify-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/McccNotify/McccNotify.modulemap";
+				PRODUCT_MODULE_NAME = McccNotify;
+				PRODUCT_NAME = McccNotify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2CCFC20E16F2D9776EDEF104BD2F59F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32CDED2201582DF4EE0344ED79F05874 /* Pods-McccNotify_Example.release.xcconfig */;
@@ -445,9 +478,9 @@
 			};
 			name = Release;
 		};
-		30164BD1C795E147A9BDF27DDE8CA184 /* Debug */ = {
+		411D0ECC495053B6547EFD100C2CCC8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12A5829FF24ADF8097ED3DE4F5670B36 /* McccNotify.debug.xcconfig */;
+			baseConfigurationReference = 674AD34376A490E106A074788D3F003B /* McccNotify.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -666,42 +699,10 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A37006DE8431D67AAD1AB896966601D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EBDBFF9AA3C43A02D3339790CA7DB81 /* McccNotify.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/McccNotify/McccNotify-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/McccNotify/McccNotify-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/McccNotify/McccNotify.modulemap";
-				PRODUCT_MODULE_NAME = McccNotify;
-				PRODUCT_NAME = McccNotify;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -743,6 +744,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3DC599C349121B666C5A21A1EDB2E6DF /* Build configuration list for PBXNativeTarget "McccNotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411D0ECC495053B6547EFD100C2CCC8B /* Debug */,
+				1504833CAE1D85B900764E8508DE8AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		47F076D0412BA13089731B52B0F1ED58 /* Build configuration list for PBXNativeTarget "Pods-McccNotify_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -766,15 +776,6 @@
 			buildConfigurations = (
 				8B5C2F63733A933CC601E8D5B1230DF0 /* Debug */,
 				F93D4C1E0C0F2CCD5DD9CD456680EDAF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D38500A7D49E973366D4EE67D4676353 /* Build configuration list for PBXNativeTarget "McccNotify" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				30164BD1C795E147A9BDF27DDE8CA184 /* Debug */,
-				A37006DE8431D67AAD1AB896966601D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

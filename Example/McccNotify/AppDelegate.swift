@@ -7,40 +7,59 @@
 //
 
 import UIKit
+import UserNotifications
+import BackgroundTasks
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.myapp.cleanup", using: nil) { task in
+            self.handleCleanupTask(task: task as! BGProcessingTask)
+        }
+        
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-    }
-
+    
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        scheduleCleanupTask()
     }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    func scheduleCleanupTask() {
+        let request = BGProcessingTaskRequest(identifier: "com.myapp.cleanup")
+        request.requiresNetworkConnectivity = false
+        request.requiresExternalPower = false
+        request.earliestBeginDate = Date(timeIntervalSinceNow: 5) // 15 分钟后
+        
+        do {
+            try BGTaskScheduler.shared.submit(request)
+        } catch {
+            print("提交后台任务失败：\(error)")
+        }
     }
+    
+    func handleCleanupTask(task: BGProcessingTask) {
+        task.expirationHandler = {
+            // 超时处理
+        }
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+            let content = UNMutableNotificationContent()
+            content.title = "🧹 清理完成"
+            content.body = "成功释放 240MB 空间"
+            content.sound = .default
+
+            let request = UNNotificationRequest(identifier: "cleanup_complete", content: content, trigger: nil)
+            UNUserNotificationCenter.current().add(request)
+
+            task.setTaskCompleted(success: true)
+
+            // 任务结束后重新调度下一次任务（如果需要持续执行）
+            self.scheduleCleanupTask()
+        }
     }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
 }
-

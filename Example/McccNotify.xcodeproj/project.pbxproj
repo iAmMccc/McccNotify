@@ -14,6 +14,10 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		991323ED2E140C74009EBA06 /* earlyRiser.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 991323EC2E140C74009EBA06 /* earlyRiser.m4a */; };
+		991323EF2E1410C2009EBA06 /* aiChatLoading.mov in Resources */ = {isa = PBXBuildFile; fileRef = 991323EE2E1410C2009EBA06 /* aiChatLoading.mov */; };
+		991323F12E141191009EBA06 /* july.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 991323F02E141191009EBA06 /* july.mp3 */; };
+		991323F32E1412D0009EBA06 /* 头像.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991323F22E1412D0009EBA06 /* 头像.jpg */; };
 		FD448F64666DBB5B088695DF /* Pods_McccNotify_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C153858CFC2A362B8A7C23 /* Pods_McccNotify_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +46,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9027C1E107657744DA21E999 /* Pods_McccNotify_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		991323EC2E140C74009EBA06 /* earlyRiser.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = earlyRiser.m4a; sourceTree = "<group>"; };
+		991323EE2E1410C2009EBA06 /* aiChatLoading.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = aiChatLoading.mov; sourceTree = "<group>"; };
+		991323F02E141191009EBA06 /* july.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = july.mp3; sourceTree = "<group>"; };
+		991323F22E1412D0009EBA06 /* 头像.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "头像.jpg"; sourceTree = "<group>"; };
 		B1425DE43F866C7D0D727A07 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BC3623B29C7127081AADB707 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C55C562083607D067B9076A1 /* Pods-McccNotify_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McccNotify_Example.release.xcconfig"; path = "Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,9 +114,13 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				991323EE2E1410C2009EBA06 /* aiChatLoading.mov */,
+				991323F02E141191009EBA06 /* july.mp3 */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				991323F22E1412D0009EBA06 /* 头像.jpg */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				991323EC2E140C74009EBA06 /* earlyRiser.m4a */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for McccNotify";
@@ -248,7 +260,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991323ED2E140C74009EBA06 /* earlyRiser.m4a in Resources */,
+				991323F32E1412D0009EBA06 /* 头像.jpg in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				991323F12E141191009EBA06 /* july.mp3 in Resources */,
+				991323EF2E1410C2009EBA06 /* aiChatLoading.mov in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -488,7 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -505,7 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
