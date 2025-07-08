@@ -71,8 +71,7 @@ extension McccNotify {
 // MARK: 发出请求
 extension McccNotify {
 
-    @discardableResult
-    public func send() -> UNNotificationRequest {
+    public func send() {
         let content = contentBuilder.build()
 
         if let cat = categoryId {
@@ -86,6 +85,5 @@ extension McccNotify {
         
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: finalTrigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-        return request
     }
 }

@@ -26,9 +26,14 @@ extension ViewController {
     func didSelectSection2(atRow row: Int) {
         switch row {
         case 0:
-           break
-            
-        case 1:
+            McccNotify()
+                .content {
+                    $0.title("通知标题")
+                    $0.body("这是副标题")
+                }
+                .trigger(.timeInterval(4, repeats: false))
+                .send()
+         case 1:
             break
             
         case 2:

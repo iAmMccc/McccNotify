@@ -26,6 +26,7 @@
 		99765A0C2E1D125B00549DE8 /* ViewController+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99765A0B2E1D125B00549DE8 /* ViewController+Test.swift */; };
 		99765A0E2E1D137100549DE8 /* ViewController+Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99765A0D2E1D137100549DE8 /* ViewController+Authorization.swift */; };
 		99765A102E1D146700549DE8 /* ViewController+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99765A0F2E1D146700549DE8 /* ViewController+Content.swift */; };
+		99765A152E1D1A9D00549DE8 /* ViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99765A142E1D1A9D00549DE8 /* ViewController+Management.swift */; };
 		FD448F64666DBB5B088695DF /* Pods_McccNotify_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C153858CFC2A362B8A7C23 /* Pods_McccNotify_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		99765A0B2E1D125B00549DE8 /* ViewController+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Test.swift"; sourceTree = "<group>"; };
 		99765A0D2E1D137100549DE8 /* ViewController+Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Authorization.swift"; sourceTree = "<group>"; };
 		99765A0F2E1D146700549DE8 /* ViewController+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Content.swift"; sourceTree = "<group>"; };
+		99765A142E1D1A9D00549DE8 /* ViewController+Management.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Management.swift"; sourceTree = "<group>"; };
 		B1425DE43F866C7D0D727A07 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BC3623B29C7127081AADB707 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C55C562083607D067B9076A1 /* Pods-McccNotify_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McccNotify_Example.release.xcconfig"; path = "Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,8 +250,9 @@
 			children = (
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				99765A0B2E1D125B00549DE8 /* ViewController+Test.swift */,
-				99765A0F2E1D146700549DE8 /* ViewController+Content.swift */,
 				99765A0D2E1D137100549DE8 /* ViewController+Authorization.swift */,
+				99765A142E1D1A9D00549DE8 /* ViewController+Management.swift */,
+				99765A0F2E1D146700549DE8 /* ViewController+Content.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99765A0C2E1D125B00549DE8 /* ViewController+Test.swift in Sources */,
+				99765A152E1D1A9D00549DE8 /* ViewController+Management.swift in Sources */,
 				99765A0A2E1D10DD00549DE8 /* ArraySafe.swift in Sources */,
 				99765A082E1D10A400549DE8 /* UITableView+Reusable.swift in Sources */,
 				99765A0E2E1D137100549DE8 /* ViewController+Authorization.swift in Sources */,

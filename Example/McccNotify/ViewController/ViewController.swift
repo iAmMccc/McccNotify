@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         dataArray = [
             notify_test,
             notify_authorization,
+            notify_management,
             notify_content,
             notify_trigger,
             notify_sound,
@@ -146,6 +147,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("准备发送通知")
         
         switch indexPath.section {
             case 0:

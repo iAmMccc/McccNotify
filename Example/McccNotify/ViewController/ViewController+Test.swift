@@ -23,12 +23,9 @@ extension ViewController {
     func didSelectSection0(atRow row: Int) {
         
         McccNotify()
-            .requestIdentifier("123")
             .content {
                 $0.title("通知标题")
-                $0.body("这是副标题")
             }
-            .trigger(.timeInterval(5, repeats: false))
             .send()
     }
 }

@@ -16,10 +16,9 @@
 		91F2EB29D06D3E6E0E406C4EF8FD5AA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		997658602E1BCB2100549DE8 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9976585F2E1BCB2100549DE8 /* Content.swift */; };
 		997658622E1CBD5E00549DE8 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997658612E1CBD5E00549DE8 /* Trigger.swift */; };
-		997658642E1CBDB000549DE8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997658632E1CBDB000549DE8 /* Request.swift */; };
-		997658662E1CBE2200549DE8 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997658652E1CBE2200549DE8 /* Center.swift */; };
 		997658682E1CBE6800549DE8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997658672E1CBE6800549DE8 /* Category.swift */; };
 		99765A042E1CF68300549DE8 /* McccNotifyDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99765A032E1CF68300549DE8 /* McccNotifyDelegateHandler.swift */; };
+		99765A172E1D1B2A00549DE8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99765A162E1D1B2A00549DE8 /* Request.swift */; };
 		9FBC9DADC247478B8D1B0B7C09F34A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C6819552F3CED207204D061FD4DA117F /* McccNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DC21081D400764E3262D94BBEB65B5 /* McccNotify.swift */; };
 		D90BD416F1F8F732F8688D7B34C2766F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -66,10 +65,9 @@
 		893E242D41EC6A8F5A75DB11B716205A /* Pods_McccNotify_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9976585F2E1BCB2100549DE8 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Content.swift; path = McccNotify/Classes/Content.swift; sourceTree = "<group>"; };
 		997658612E1CBD5E00549DE8 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Trigger.swift; path = McccNotify/Classes/Trigger.swift; sourceTree = "<group>"; };
-		997658632E1CBDB000549DE8 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Request.swift; path = McccNotify/Classes/Request.swift; sourceTree = "<group>"; };
-		997658652E1CBE2200549DE8 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Center.swift; path = McccNotify/Classes/Center.swift; sourceTree = "<group>"; };
 		997658672E1CBE6800549DE8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		99765A032E1CF68300549DE8 /* McccNotifyDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = McccNotifyDelegateHandler.swift; path = McccNotify/Classes/McccNotifyDelegateHandler.swift; sourceTree = "<group>"; };
+		99765A162E1D1B2A00549DE8 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Request.swift; path = McccNotify/Classes/Request.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods_McccNotify_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE5E88C3A5AC9F5A22526B782E2AA79 /* Pods-McccNotify_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -211,13 +209,12 @@
 			isa = PBXGroup;
 			children = (
 				28DC21081D400764E3262D94BBEB65B5 /* McccNotify.swift */,
+				99765A162E1D1B2A00549DE8 /* Request.swift */,
 				4B4B6FE74AE60FF0330B7607B0EA06D4 /* Authorization.swift */,
 				9976585F2E1BCB2100549DE8 /* Content.swift */,
-				997658632E1CBDB000549DE8 /* Request.swift */,
 				FD70CD0D79CF012C162C7787C1261BE5 /* Pod */,
 				D9CF498A90195956332C757D16BD428B /* Support Files */,
 				997658612E1CBD5E00549DE8 /* Trigger.swift */,
-				997658652E1CBE2200549DE8 /* Center.swift */,
 				997658672E1CBE6800549DE8 /* Category.swift */,
 				99765A032E1CF68300549DE8 /* McccNotifyDelegateHandler.swift */,
 			);
@@ -398,11 +395,10 @@
 			files = (
 				99765A042E1CF68300549DE8 /* McccNotifyDelegateHandler.swift in Sources */,
 				7A2E90CCF943D2FB6FDDDF09BD1B31CD /* Authorization.swift in Sources */,
-				997658642E1CBDB000549DE8 /* Request.swift in Sources */,
-				997658662E1CBE2200549DE8 /* Center.swift in Sources */,
 				C6819552F3CED207204D061FD4DA117F /* McccNotify.swift in Sources */,
 				70FB59627AB27A92657F336652765521 /* McccNotify-dummy.m in Sources */,
 				997658622E1CBD5E00549DE8 /* Trigger.swift in Sources */,
+				99765A172E1D1B2A00549DE8 /* Request.swift in Sources */,
 				997658602E1BCB2100549DE8 /* Content.swift in Sources */,
 				997658682E1CBE6800549DE8 /* Category.swift in Sources */,
 			);
