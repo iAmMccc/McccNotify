@@ -5,6 +5,7 @@ platform :ios, '15.0'
 target 'McccNotify_Example' do
   pod 'McccNotify', :path => '../'
 
+  pod ''
   target 'McccNotify_Tests' do
     inherit! :search_paths
 
