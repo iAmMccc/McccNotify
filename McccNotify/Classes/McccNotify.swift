@@ -40,14 +40,14 @@ extension McccNotify {
 // MARK: - 分类构造
 extension McccNotify {
     @discardableResult
-    public func category(id: String, _ config: (CategoryBuilder) -> Void) -> Self {
-        
+    public func category(id: String, _ config: ((CategoryBuilder) -> Void)? = nil) -> Self {
+
         if categoryBuilder == nil {
             categoryBuilder = CategoryBuilder()
         }
         
         categoryBuilder?.categoryIdentifier = id
-        if let builder = categoryBuilder {
+        if let builder = categoryBuilder, let config = config {
             config(builder)
         }
         return self

@@ -29,6 +29,7 @@ class ViewController: UIViewController {
             notify_trigger,
             notify_sound,
             notify_category,
+            notify_contentExtension,
         ]
         
         
@@ -108,6 +109,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             didSelectSection5(atRow: indexPath.row)
         case 6:
             didSelectSection6(atRow: indexPath.row)
+        case 7:
+            didSelectSection7(atRow: indexPath.row)
             // ...
         default:
             break

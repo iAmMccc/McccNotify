@@ -44,7 +44,13 @@ extension AppDelegate {
         
         notify.onReceiveResponse = { response in
             print("收到通知点击: \(response)")
+            
             print("携带的信息：\(response.notification.request.content.userInfo)")
+            
+            let actionIdentifier = response.actionIdentifier
+            if !actionIdentifier.isEmpty {
+                print("actionId = \(actionIdentifier)")
+            }
         }
         
         notify.onOpenSettings = { notification in

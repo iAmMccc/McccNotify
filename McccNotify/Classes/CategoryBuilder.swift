@@ -52,8 +52,9 @@ extension McccNotify.CategoryBuilder {
         )
         
         UNUserNotificationCenter.current().getNotificationCategories { existing in
-            var all = existing
-            all.insert(category) // UNNotificationCategory 遵循 Hashable
+            // 先移除旧的 Category，再插入新的
+            var all = existing.filter { $0.identifier != category.identifier }
+            all.insert(category)
             UNUserNotificationCenter.current().setNotificationCategories(all)
         }
     }

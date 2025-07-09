@@ -21,6 +21,7 @@
 		992B386C2E1E4CAA00BE9385 /* ViewController+Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B386B2E1E4CAA00BE9385 /* ViewController+Trigger.swift */; };
 		992B386E2E1E6BA600BE9385 /* ViewController+Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B386D2E1E6BA600BE9385 /* ViewController+Sound.swift */; };
 		992B38702E1E81C900BE9385 /* ViewController+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B386F2E1E81C900BE9385 /* ViewController+Category.swift */; };
+		992B38742E1E8CD700BE9385 /* ViewController+ContentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B38732E1E8CD700BE9385 /* ViewController+ContentExtension.swift */; };
 		9976584D2E1BA37800549DE8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9976584C2E1BA37800549DE8 /* UserNotifications.framework */; };
 		9976584F2E1BA37800549DE8 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9976584E2E1BA37800549DE8 /* UserNotificationsUI.framework */; };
 		997658592E1BA37800549DE8 /* NotificationContentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9976584B2E1BA37800549DE8 /* NotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -86,6 +87,7 @@
 		992B386B2E1E4CAA00BE9385 /* ViewController+Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Trigger.swift"; sourceTree = "<group>"; };
 		992B386D2E1E6BA600BE9385 /* ViewController+Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Sound.swift"; sourceTree = "<group>"; };
 		992B386F2E1E81C900BE9385 /* ViewController+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Category.swift"; sourceTree = "<group>"; };
+		992B38732E1E8CD700BE9385 /* ViewController+ContentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ContentExtension.swift"; sourceTree = "<group>"; };
 		9976584B2E1BA37800549DE8 /* NotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9976584C2E1BA37800549DE8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		9976584E2E1BA37800549DE8 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -268,6 +270,7 @@
 				992B386B2E1E4CAA00BE9385 /* ViewController+Trigger.swift */,
 				992B386D2E1E6BA600BE9385 /* ViewController+Sound.swift */,
 				992B386F2E1E81C900BE9385 /* ViewController+Category.swift */,
+				992B38732E1E8CD700BE9385 /* ViewController+ContentExtension.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 			files = (
 				99765A0C2E1D125B00549DE8 /* ViewController+Test.swift in Sources */,
 				99765A152E1D1A9D00549DE8 /* ViewController+Management.swift in Sources */,
+				992B38742E1E8CD700BE9385 /* ViewController+ContentExtension.swift in Sources */,
 				992B386E2E1E6BA600BE9385 /* ViewController+Sound.swift in Sources */,
 				99765A0A2E1D10DD00549DE8 /* ArraySafe.swift in Sources */,
 				99765A082E1D10A400549DE8 /* UITableView+Reusable.swift in Sources */,
