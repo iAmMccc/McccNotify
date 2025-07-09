@@ -45,19 +45,6 @@ class ViewController: UIViewController {
 extension ViewController {
     
 
-    var notify_trigger: [String: Any] {
-        [
-            "title": "通知触发器测试",
-            "list": [
-                ["name": "立即触发的通知"],
-                ["name": "延时 5 秒的通知"],
-                ["name": "日历时间触发（每天 9:00）"],
-                ["name": "位置进入通知（模拟位置）"],
-                ["name": "位置离开通知（模拟位置）"]
-            ]
-        ]
-    }
-    
     var notify_sound: [String: Any] {
         [
             "title": "通知声音测试",
@@ -151,17 +138,21 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         print("准备发送通知")
         
         switch indexPath.section {
-            case 0:
-                didSelectSection0(atRow: indexPath.row)
-            case 1:
-                didSelectSection1(atRow: indexPath.row)
-            case 2:
-                didSelectSection2(atRow: indexPath.row)
+        case 0:
+            didSelectSection0(atRow: indexPath.row)
+        case 1:
+            didSelectSection1(atRow: indexPath.row)
+        case 2:
+            didSelectSection2(atRow: indexPath.row)
+        case 3:
+            didSelectSection3(atRow: indexPath.row)
+        case 4:
+            didSelectSection4(atRow: indexPath.row)
             // ...
-            default:
-                break
-            }
-
+        default:
+            break
+        }
+        
     }
     
 }

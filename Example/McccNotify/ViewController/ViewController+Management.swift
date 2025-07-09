@@ -28,7 +28,7 @@ extension ViewController {
         ]
     }
     
-    func didSelectNotify2(atRow row: Int) {
+    func didSelectSection2(atRow row: Int) {
         switch row {
             // 待发送通知（Pending）
         case 0:

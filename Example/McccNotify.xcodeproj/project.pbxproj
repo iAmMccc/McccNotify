@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,10 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		991323ED2E140C74009EBA06 /* earlyRiser.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 991323EC2E140C74009EBA06 /* earlyRiser.m4a */; };
-		991323EF2E1410C2009EBA06 /* aiChatLoading.mov in Resources */ = {isa = PBXBuildFile; fileRef = 991323EE2E1410C2009EBA06 /* aiChatLoading.mov */; };
+		991323EF2E1410C2009EBA06 /* loading.mov in Resources */ = {isa = PBXBuildFile; fileRef = 991323EE2E1410C2009EBA06 /* loading.mov */; };
 		991323F12E141191009EBA06 /* july.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 991323F02E141191009EBA06 /* july.mp3 */; };
 		991323F32E1412D0009EBA06 /* 头像.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 991323F22E1412D0009EBA06 /* 头像.jpg */; };
+		992B386C2E1E4CAA00BE9385 /* ViewController+Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B386B2E1E4CAA00BE9385 /* ViewController+Trigger.swift */; };
 		9976584D2E1BA37800549DE8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9976584C2E1BA37800549DE8 /* UserNotifications.framework */; };
 		9976584F2E1BA37800549DE8 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9976584E2E1BA37800549DE8 /* UserNotificationsUI.framework */; };
 		997658592E1BA37800549DE8 /* NotificationContentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9976584B2E1BA37800549DE8 /* NotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -77,9 +78,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9027C1E107657744DA21E999 /* Pods_McccNotify_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991323EC2E140C74009EBA06 /* earlyRiser.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = earlyRiser.m4a; sourceTree = "<group>"; };
-		991323EE2E1410C2009EBA06 /* aiChatLoading.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = aiChatLoading.mov; sourceTree = "<group>"; };
+		991323EE2E1410C2009EBA06 /* loading.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = loading.mov; sourceTree = "<group>"; };
 		991323F02E141191009EBA06 /* july.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = july.mp3; sourceTree = "<group>"; };
 		991323F22E1412D0009EBA06 /* 头像.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "头像.jpg"; sourceTree = "<group>"; };
+		992B386B2E1E4CAA00BE9385 /* ViewController+Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Trigger.swift"; sourceTree = "<group>"; };
 		9976584B2E1BA37800549DE8 /* NotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9976584C2E1BA37800549DE8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		9976584E2E1BA37800549DE8 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -97,7 +99,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9976585D2E1BA37800549DE8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9976585D2E1BA37800549DE8 /* Exceptions for "NotificationContentExtension" folder in "NotificationContentExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -107,7 +109,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		997658502E1BA37800549DE8 /* NotificationContentExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9976585D2E1BA37800549DE8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NotificationContentExtension; sourceTree = "<group>"; };
+		997658502E1BA37800549DE8 /* NotificationContentExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9976585D2E1BA37800549DE8 /* Exceptions for "NotificationContentExtension" folder in "NotificationContentExtension" target */,
+			);
+			path = NotificationContentExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +190,6 @@
 				99765A112E1D166700549DE8 /* Support */,
 				99765A132E1D168D00549DE8 /* Sources */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				991323F22E1412D0009EBA06 /* 头像.jpg */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -253,6 +261,7 @@
 				99765A0D2E1D137100549DE8 /* ViewController+Authorization.swift */,
 				99765A142E1D1A9D00549DE8 /* ViewController+Management.swift */,
 				99765A0F2E1D146700549DE8 /* ViewController+Content.swift */,
+				992B386B2E1E4CAA00BE9385 /* ViewController+Trigger.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -260,8 +269,9 @@
 		99765A132E1D168D00549DE8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				991323F22E1412D0009EBA06 /* 头像.jpg */,
 				991323EC2E140C74009EBA06 /* earlyRiser.m4a */,
-				991323EE2E1410C2009EBA06 /* aiChatLoading.mov */,
+				991323EE2E1410C2009EBA06 /* loading.mov */,
 				991323F02E141191009EBA06 /* july.mp3 */,
 			);
 			path = Sources;
@@ -326,8 +336,6 @@
 				997658502E1BA37800549DE8 /* NotificationContentExtension */,
 			);
 			name = NotificationContentExtension;
-			packageProductDependencies = (
-			);
 			productName = NotificationContentExtension;
 			productReference = 9976584B2E1BA37800549DE8 /* NotificationContentExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -359,7 +367,6 @@
 				};
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "McccNotify" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -368,6 +375,7 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -388,7 +396,7 @@
 				991323F32E1412D0009EBA06 /* 头像.jpg in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				991323F12E141191009EBA06 /* july.mp3 in Resources */,
-				991323EF2E1410C2009EBA06 /* aiChatLoading.mov in Resources */,
+				991323EF2E1410C2009EBA06 /* loading.mov in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -460,13 +468,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/McccNotify/McccNotify.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/McccNotify.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -488,6 +499,7 @@
 				99765A102E1D146700549DE8 /* ViewController+Content.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				992B386C2E1E4CAA00BE9385 /* ViewController+Trigger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

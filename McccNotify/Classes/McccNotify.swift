@@ -84,6 +84,15 @@ extension McccNotify {
         let finalTrigger = trigger ?? UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
         
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: finalTrigger)
+        
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+}
+
+
+extension McccNotify {
+    
+    public static func applicationDidBecomeActive() {
+        BadgeManager.shared.applicationDidBecomeActive()
     }
 }

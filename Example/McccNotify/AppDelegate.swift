@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setMcccNotifyDelegate()
         return true
     }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        McccNotify.applicationDidBecomeActive()
+    }
 }
 
 
@@ -39,7 +43,8 @@ extension AppDelegate {
         }
         
         notify.onReceiveResponse = { response in
-            print("收到通知点击: \(response.actionIdentifier)")
+            print("收到通知点击: \(response)")
+            print("携带的信息：\(response.notification.request.content.userInfo)")
         }
         
         notify.onOpenSettings = { notification in

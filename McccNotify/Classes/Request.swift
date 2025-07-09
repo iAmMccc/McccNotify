@@ -71,3 +71,32 @@ extension McccNotify.Request {
         UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: ids)
     }
 }
+
+
+extension McccNotify.Request {
+    
+    /// 查询指定 requestID 的通知的下一次触发时间
+    public static func nextTriggerDate(id: String, completion: @escaping (Date?) -> Void) {
+        UNUserNotificationCenter.current().getPendingNotificationRequests { requests in
+            guard let trigger = requests.first(where: { $0.identifier == id })?.trigger else {
+                DispatchQueue.main.async { completion(nil) }
+                return
+            }
+            
+            let next: Date?
+            
+            switch trigger {
+            case let timeTrigger as UNTimeIntervalNotificationTrigger:
+                next = timeTrigger.nextTriggerDate()
+            case let calendarTrigger as UNCalendarNotificationTrigger:
+                next = calendarTrigger.nextTriggerDate()
+            default:
+                next = nil
+            }
+            
+            DispatchQueue.main.async {
+                completion(next)
+            }
+        }
+    }
+}
