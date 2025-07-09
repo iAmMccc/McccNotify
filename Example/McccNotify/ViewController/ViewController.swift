@@ -29,7 +29,6 @@ class ViewController: UIViewController {
             notify_trigger,
             notify_sound,
             notify_category,
-            notify_attachment
         ]
         
         
@@ -39,49 +38,6 @@ class ViewController: UIViewController {
     }
     
     lazy var tableView = UITableView.make(registerCells: [UITableViewCell.self], delegate: self, style: .grouped)
-}
-
-
-extension ViewController {
-    
-
-    var notify_sound: [String: Any] {
-        [
-            "title": "通知声音测试",
-            "list": [
-                ["name": "系统默认声音"],
-                ["name": "自定义声音文件"],
-                ["name": "关键通知声音（需授权）"],
-                ["name": "铃声类型声音（iOS 15.2+）"],
-                ["name": "自动判断是否支持关键通知，降级播放"]
-            ]
-        ]
-    }
-    
-    var notify_category: [String: Any] {
-        [
-            "title": "通知交互（Category）测试",
-            "list": [
-                ["name": "注册带按钮的通知类别"],
-                ["name": "发送一个带交互按钮的通知"],
-                ["name": "处理通知按钮点击响应"],
-                ["name": "发送一个带文本输入按钮的通知"]
-            ]
-        ]
-    }
-    
-    var notify_attachment: [String: Any] {
-        [
-            "title": "通知附件测试",
-            "list": [
-                ["name": "发送带图片附件的通知"],
-                ["name": "发送带音频附件的通知"],
-                ["name": "发送带视频附件的通知"],
-                ["name": "发送带多个附件的通知"],
-                ["name": "尝试发送格式不支持的附件"]
-            ]
-        ]
-    }
 }
 
 
@@ -148,6 +104,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             didSelectSection3(atRow: indexPath.row)
         case 4:
             didSelectSection4(atRow: indexPath.row)
+        case 5:
+            didSelectSection5(atRow: indexPath.row)
+        case 6:
+            didSelectSection6(atRow: indexPath.row)
             // ...
         default:
             break

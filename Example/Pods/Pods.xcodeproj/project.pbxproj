@@ -15,6 +15,7 @@
 		4689DDD33D2A2D9F9DA89C2426E5DB93 /* Pods-McccNotify_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CCB47451473A21642069C8F6196F5C /* Pods-McccNotify_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73AC966AD0EFCE0F29D43F9CFF9A9433 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C682672DA5C74E97186E528D202E910 /* Trigger.swift */; };
 		90A2BD1B1A67E6598DA7DF91252F1647 /* Pods-McccNotify_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44AFC468DED4D18D83E2BFA3211B3D9C /* Pods-McccNotify_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		992B38722E1E837600BE9385 /* CategoryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B38712E1E837600BE9385 /* CategoryBuilder.swift */; };
 		B5F9F0BC4D12988B48F0D830D46EC8B4 /* McccNotifyDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E60EDB869C1E85D73B7A9C4EDE83137 /* McccNotifyDelegateHandler.swift */; };
 		BC76669F300B2CFFEB20613E3B666FE5 /* McccNotify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 487B141D0CB09C29EC4D467DB13035C8 /* McccNotify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C521E3FA30BDB4D183CE570069CACF70 /* Pods-McccNotify_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C5D8F41B6F34B54532E0A0E452C9FC /* Pods-McccNotify_Example-dummy.m */; };
@@ -64,6 +65,7 @@
 		872E9345651DD675A7FB311E05D3888E /* McccNotify.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = McccNotify.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		893E242D41EC6A8F5A75DB11B716205A /* Pods_McccNotify_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB67963B885A431162755E57D20AF70 /* Authorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorization.swift; path = McccNotify/Classes/Authorization.swift; sourceTree = "<group>"; };
+		992B38712E1E837600BE9385 /* CategoryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryBuilder.swift; path = McccNotify/Classes/CategoryBuilder.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB03DB1CE7C771456125FE0C2FFF1BD2 /* Pods_McccNotify_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_McccNotify_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE5E88C3A5AC9F5A22526B782E2AA79 /* Pods-McccNotify_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-McccNotify_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				9C085B4EC8A8A604D9D3E58A9266CCD5 /* Content */,
 				6D27C5F2247817D625FB64B2A89C2BF8 /* Pod */,
 				D9D5277FE4A350262A48D69AEF60F008 /* Support Files */,
+				992B38712E1E837600BE9385 /* CategoryBuilder.swift */,
 			);
 			name = McccNotify;
 			path = ../..;
@@ -418,6 +421,7 @@
 				FC363DE190E0B2F9FC672E1737AA25AE /* BadgeManager.swift in Sources */,
 				C8789D53E98B3D3CBF3124E5C416B227 /* ContentBuilder.swift in Sources */,
 				32CC4B4FC53A5568BE8DFE4A8E2D3405 /* McccNotify.swift in Sources */,
+				992B38722E1E837600BE9385 /* CategoryBuilder.swift in Sources */,
 				F0F749964CFD50AA98E58F621E199F6C /* McccNotify-dummy.m in Sources */,
 				B5F9F0BC4D12988B48F0D830D46EC8B4 /* McccNotifyDelegateHandler.swift in Sources */,
 				F5CF55FEFA35E5F33D9FEACC4CCCDCC9 /* Request.swift in Sources */,

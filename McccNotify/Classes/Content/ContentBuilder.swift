@@ -30,28 +30,76 @@ extension McccNotify {
         public func userInfo(_ userInfo: [AnyHashable: Any]) {
             content.userInfo = userInfo
         }
+        
+        /// 设置通知的线程 ID，用于通知分组展示
+        public func threadIdentifier(_ id: String) {
+            content.threadIdentifier = id
+        }
+    }
+}
+
+
+extension McccNotify.ContentBuilder {
+    /// 设置普通通知声音
+    ///
+    /// - Parameter soundName: 自定义声音名称（应包含扩展名，如 "ding.m4a"）。若为 `nil` 则使用系统默认声音。
+    public func normalSound(_ soundName: String? = nil) {
+        if let soundName {
+            content.sound = UNNotificationSound(named: UNNotificationSoundName(soundName))
+        } else {
+            content.sound = .default
+        }
     }
 
     
-
-}
-extension McccNotify.ContentBuilder {
-    public func defaultSound() {
-        content.sound = .default
-    }
-
-    public func sound(named name: String) {
-        content.sound = UNNotificationSound(named: UNNotificationSoundName(name))
-    }
-
-    public func criticalSound(name: String, volume: Float = 1.0) {
-        if #available(iOS 12.0, *) {
-            content.sound = UNNotificationSound.criticalSoundNamed(
-                UNNotificationSoundName(name),
-                withAudioVolume: min(max(volume, 0.0), 1.0)
-            )
+    
+    /// 设置铃声类型的通知声音（仅支持 iOS 15.2 及以上）
+    ///
+    /// - Parameter soundName: 铃声音频文件名，需包含扩展名（如 "alert.caf"）。若为 `nil`，使用系统默认铃声。
+    ///
+    /// ⚠️ 若设备系统低于 iOS 15.2，将回退为 `.default`
+    public func ringtoneSound(_ soundName: String? = nil) {
+        if #available(iOS 15.2, *) {
+            if let soundName {
+                content.sound = UNNotificationSound.ringtoneSoundNamed(UNNotificationSoundName(soundName))
+            } else {
+                content.sound = .defaultRingtone
+            }
+        } else {
+            content.sound = .default
         }
     }
+    
+    
+    /// 设置关键通知声音（Critical Alert），在静音或勿扰模式下依然响铃
+        ///
+        /// - Parameters:
+        ///   - soundName: 自定义关键通知声音（需包含扩展名）。若为 `nil`，使用系统默认关键声音。
+        ///   - volume: 播放音量，范围 `0.0 ~ 1.0`，默认 1.0
+        ///
+        /// ⚠️ 使用关键声音需：
+        /// - 在 Info.plist 中声明 `UIBackgroundModes = critical-alert`
+        /// - 请求授权时包含 `.criticalAlert`
+        /// - 用户设置中开启“允许关键通知”
+        ///
+        /// ⚠️ iOS 12.0 以下系统将自动回退为 `.default`
+        public func criticalSound(soundName: String? = nil, volume: Float = 1.0) {
+
+            if #available(iOS 12.0, *) {
+                if let soundName {
+                    let clampedVolume = min(max(volume, 0.0), 1.0)
+                    content.sound = UNNotificationSound.criticalSoundNamed(
+                        UNNotificationSoundName(soundName),
+                        withAudioVolume: clampedVolume
+                    )
+                } else {
+                    content.sound = .defaultCritical
+                }
+            } else {
+                content.sound = .default
+            }
+        }
+
 }
 
 extension McccNotify.ContentBuilder {

@@ -52,3 +52,13 @@ extension AppDelegate {
         }
     }
 }
+
+
+/**
+ <key>NSExtensionAttributes</key>
+ <dict>
+    <!-- 关键通知权限声明 -->
+    <key>UNNotificationExtensionCriticalAlert</key>
+    <true/>
+ <dict>
+ */

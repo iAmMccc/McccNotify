@@ -96,19 +96,19 @@ extension ViewController {
         case 5:
             // 需要在锁屏中查看
             McccNotify()
-                .categoryIdentifier("groupNotify")
                 .content {
                     $0.title("通知标题")
                     $0.body("这是通知主内容")
+                    $0.threadIdentifier("groupNotify")
                 }
                 .trigger(.timeInterval(4, repeats: false))
                 .send()
             
             McccNotify()
-                .categoryIdentifier("groupNotify")
                 .content {
                     $0.title("通知标题2")
                     $0.body("这是通知主内容2")
+                    $0.threadIdentifier("groupNotify")
                 }
                 .trigger(.timeInterval(4, repeats: false))
                 .send()
