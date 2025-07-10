@@ -6,6 +6,8 @@
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
+			<key>UNNotificationExtensionUserInteractionEnabled</key>
+			<true/>
 			<key>UNNotificationExtensionCriticalAlert</key>
 			<true/>
 			<key>UNNotificationExtensionDefaultContentHidden</key>
@@ -15,7 +17,7 @@
 				<string>dailyQuotes</string>
 			</array>
 			<key>UNNotificationExtensionInitialContentSizeRatio</key>
-			<real>1</real>
+			<real>0.8</real>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
 		<string>MainInterface</string>

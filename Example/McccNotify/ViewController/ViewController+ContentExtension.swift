@@ -33,7 +33,9 @@ extension ViewController {
                     $0.body("测试通知的内容扩展")
                     $0.normalSound()
                 }
-                .category(id: "dailyQuotes")
+                .category(id: "dailyQuotes") {
+                    $0.action("send", title: "发送")
+                }
                 .trigger(.timeInterval(4, repeats: false))
                 .send()
             // 构造简单通知，调用ContentExtension的didReceive方法，断言UI显示正确

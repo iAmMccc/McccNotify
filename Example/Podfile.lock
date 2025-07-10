@@ -1,8 +1,14 @@
 PODS:
   - McccNotify (0.1.0)
+  - SnapKit (5.7.1)
 
 DEPENDENCIES:
   - McccNotify (from `../`)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
   McccNotify:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   McccNotify: cfa8af41fcc0a8e55415152fadf44358e0e10439
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
 
-PODFILE CHECKSUM: d4467ceab80e2fb238c1b32b3a42bb3f00749898
+PODFILE CHECKSUM: f1ab767f625ca76c28b7a3fc34bf0a2dee189b81
 
 COCOAPODS: 1.16.2
