@@ -41,7 +41,7 @@ extension McccNotify.CategoryBuilder {
     /// 注册 Category 到通知中心
     func register() {
         guard !categoryIdentifier.isEmpty else {
-            print("❌ Category identifier 不能为空")
+            NotifyLogger.log(level: .error, module: .category, message: "categoryIdentifier不可为空")
             return
         }
         let category = UNNotificationCategory(

@@ -18,6 +18,9 @@ extension McccNotify.Authorization {
         completion: @escaping (Bool, Error?) -> Void
     ) {
         UNUserNotificationCenter.current().requestAuthorization(options: options) { granted, error in
+            
+            NotifyLogger.log(level: .info, module: .authorization, message: "\(granted ? "同意通知授权" : "拒绝通知授权")")
+            
             DispatchQueue.main.async {
                 completion(granted, error)
             }

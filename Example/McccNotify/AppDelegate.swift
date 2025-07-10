@@ -18,8 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
+        
+        McccNotify.enableLogging()
+        
         notifyAuthorization()
         setMcccNotifyDelegate()
+        
         return true
     }
     
@@ -32,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     func notifyAuthorization() {
         McccNotify.Authorization.request(options: [.alert, .sound, .badge, .criticalAlert]) { granted, error in
-            print(granted ? "同意通知授权" : "拒绝了通知授权")
+//            print(granted ? "同意通知授权" : "拒绝了通知授权")
         }
     }
     

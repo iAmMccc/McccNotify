@@ -41,7 +41,7 @@ extension McccNotify {
         public func addAssetImage(named name: String, identifier: String? = nil, bundle: Bundle = .main) -> Self {
             guard let image = UIImage(named: name, in: bundle, compatibleWith: nil),
                   let data = image.pngData() else {
-                print("❌ 无法加载 .xcassets 图片或转为 PNG：\(name)")
+                NotifyLogger.log(level: .error, module: .attachment, message: "找不到名为 [\(name)] 的 .xcassets 图片，或无法转为 PNG。")
                 return self
             }
 
@@ -54,7 +54,7 @@ extension McccNotify {
                 let attachment = try UNNotificationAttachment(identifier: id, url: fileURL)
                 attachments.append(attachment)
             } catch {
-                print("❌ 创建 xcassets 图片附件失败：\(error)")
+                NotifyLogger.log(level: .error, module: .attachment, message: "无法将图片写入临时目录 [\(fileURL.lastPathComponent)]，错误：\(error)")
             }
 
             return self
@@ -73,7 +73,8 @@ extension McccNotify {
         @discardableResult
         public func addFile(named name: String, withExtension ext: String, identifier: String? = nil, bundle: Bundle = .main) -> Self {
             guard let url = bundle.url(forResource: name, withExtension: ext) else {
-                print("❌ 找不到 Bundle 文件资源：\(name).\(ext)")
+                NotifyLogger.log(level: .error, module: .attachment, message: "找不到 Bundle 文件资源：\(name).\(ext)")
+
                 return self
             }
 
@@ -82,7 +83,7 @@ extension McccNotify {
                 let attachment = try UNNotificationAttachment(identifier: id, url: url)
                 attachments.append(attachment)
             } catch {
-                print("❌ 创建附件失败：\(error)")
+                NotifyLogger.log(level: .error, module: .attachment, message: "创建本地路径附件失败：\(error)")
             }
 
             return self
@@ -100,7 +101,7 @@ extension McccNotify {
                 let attachment = try UNNotificationAttachment(identifier: id, url: url)
                 attachments.append(attachment)
             } catch {
-                print("❌ 创建本地路径附件失败：\(error)")
+                NotifyLogger.log(level: .error, module: .attachment, message: "创建本地路径附件失败：\(error)")
             }
 
             return self

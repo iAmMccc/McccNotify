@@ -16,6 +16,20 @@ public final class McccNotify {
     public init() {}
 }
 
+
+
+extension McccNotify {
+    /// 启用 McccNotify 的调试日志功能。
+    public static func enableLogging() {
+        NotifyLogger.isEnabled = true
+    }
+    
+    /// 关闭 McccNotify 的调试日志功能。
+    public static func disableLogging() {
+        NotifyLogger.isEnabled = false
+    }
+}
+
 // MARK: - 内容构造
 extension McccNotify {
     @discardableResult
