@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         McccNotify.enableLogging()
         
-        notifyAuthorization()
+        notifyAuthorization(application: application)
         setMcccNotifyDelegate()
         
         return true
@@ -34,8 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 extension AppDelegate {
-    func notifyAuthorization() {
+    func notifyAuthorization(application: UIApplication) {
         McccNotify.Authorization.request(options: [.alert, .sound, .badge, .criticalAlert]) { granted, error in
+            application.registerForRemoteNotifications()
 //            print(granted ? "同意通知授权" : "拒绝了通知授权")
         }
     }
