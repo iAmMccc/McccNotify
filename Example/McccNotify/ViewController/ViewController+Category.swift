@@ -46,7 +46,7 @@ extension ViewController {
                     $0.body("测试输入action")
                 }
                 .category(id: "inputId") {
-                    $0.textInput("input", title: "输入按钮", sendTitle: "发送")
+                    $0.textInput("input", title: "输入按钮", placeholder: "请输入内容信息【自定义的文本】", sendTitle: "发送")
                 }
                 .trigger(.timeInterval(4, repeats: false))
                 .send()
