@@ -1,8 +1,8 @@
 {
   "name": "McccNotify",
-  "version": "0.1.0",
-  "summary": "A short description of McccNotify.",
-  "homepage": "https://github.com/Mccc/McccNotify",
+  "version": "1.0.0",
+  "summary": "A notification manager supporting interactive and rich push extensions.",
+  "homepage": "https://github.com/iAmMccc/McccNotify",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -11,8 +11,8 @@
     "Mccc": "iAmMccc"
   },
   "source": {
-    "git": "https://github.com/Mccc/McccNotify.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/iAmMccc/McccNotify.git",
+    "tag": "1.0.0"
   },
   "swift_versions": "5.0",
   "platforms": {
