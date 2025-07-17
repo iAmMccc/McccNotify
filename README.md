@@ -86,7 +86,7 @@ McccNotify()
 
 ```
 // 发送带图片附件的通知
-let attachments = McccNotify.AttachmentBuilder()
+let attachments = McccNotifyAttachment()
     .addAssetImage(named: "avatar")
     .build()
 
