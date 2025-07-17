@@ -1,0 +1,6 @@
+framework module McccNotify {
+  umbrella header "McccNotify-Log-Service-umbrella.h"
+
+  export *
+  module * { export * }
+}

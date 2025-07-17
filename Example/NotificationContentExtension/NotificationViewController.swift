@@ -108,7 +108,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     
     func didReceive(_ notification: UNNotification) {
         self.label?.text = notification.request.content.body
-        print("执行了didReceive")
+        print("执行了UNNotificationContentExtension的didReceive")
     }
     lazy var cardView: UIView = {
         // 创建一个圆角背景卡片视图

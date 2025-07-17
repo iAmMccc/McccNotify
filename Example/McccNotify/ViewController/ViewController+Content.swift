@@ -49,7 +49,7 @@ extension ViewController {
             
         case 2:
             
-            let attachments = McccNotify.AttachmentBuilder()
+            let attachments = McccNotifyAttachment()
                 .addAssetImage(named: "头像")
                 .build()
             
@@ -64,7 +64,7 @@ extension ViewController {
                 .send()
             
         case 3:
-            let attachments = McccNotify.AttachmentBuilder()
+            let attachments = McccNotifyAttachment()
                 .addFile(named: "july", withExtension: "mp3")
                 .build()
             
@@ -79,7 +79,7 @@ extension ViewController {
                 .send()
             
         case 4:
-            let attachments = McccNotify.AttachmentBuilder()
+            let attachments = McccNotifyAttachment()
                 .addFile(named: "loading", withExtension: "mov")
                 .build()
             

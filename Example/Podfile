@@ -19,3 +19,9 @@ end
 target 'NotificationContentExtension' do
   pod 'SnapKit'
 end
+
+
+target 'NotificationService' do
+  pod 'McccNotify/Service', :path => '../'
+
+end
