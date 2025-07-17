@@ -187,6 +187,7 @@ extension McccNotifyAttachment {
                     let attachment = try UNNotificationAttachment(identifier: id,
                                                                   url: tmpFile,
                                                                   options: options)
+                    
                     completion(.success(attachment))
                 } catch {
                     NotifyLogger.log(level: .error, module: .attachment, message: "附件处理失败：\(error.localizedDescription)")
