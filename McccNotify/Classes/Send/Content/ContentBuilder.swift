@@ -24,7 +24,9 @@ extension McccNotify {
         }
 
         public func body(_ body: String) {
-            content.body = body
+            if body.count > 0 {
+                content.body = body
+            }
         }
         
         public func userInfo(_ userInfo: [AnyHashable: Any]) {

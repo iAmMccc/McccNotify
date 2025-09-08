@@ -39,6 +39,29 @@ class ViewController: UIViewController {
     }
     
     lazy var tableView = UITableView.make(registerCells: [UITableViewCell.self], delegate: self, style: .grouped)
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+
+        
+        /**
+         case notDetermined = 0
+
+         case denied = 1
+
+         case authorized = 2
+
+         @available(iOS 12.0, *)
+         case provisional = 3
+
+         @available(iOS 14.0, *)
+         case ephemeral = 4
+         
+         */
+        
+    }
 }
 
 

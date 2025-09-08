@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     func notifyAuthorization(application: UIApplication) {
-        McccNotify.Authorization.request(options: [.alert, .sound, .badge, .criticalAlert]) { granted, error in
+        McccNotify.Authorization.request(options: [.provisional]) { granted, error in
             application.registerForRemoteNotifications()
 //            print(granted ? "同意通知授权" : "拒绝了通知授权")
         }
@@ -61,19 +61,49 @@ extension AppDelegate {
             [.banner, .sound]
         }
         
-        notify.onReceiveResponse = { response in
+        notify.onReceiveResponse = { [weak self] response, completionHandler in
             print("收到通知点击: \(response)")
             
-            print("携带的信息：\(response.notification.request.content.userInfo)")
+            let userInfo = response.notification.request.content.userInfo
+            print("携带的信息：\(userInfo)")
             
-            let actionIdentifier = response.actionIdentifier
-            if !actionIdentifier.isEmpty {
-                print("actionId = \(actionIdentifier)")
+            // 解析URL参数
+            if let urlString = userInfo["jump-url"] as? String {
+                self?.handleNotificationURL(urlString, completion: completionHandler)
+            } else {
+                let actionIdentifier = response.actionIdentifier
+                if !actionIdentifier.isEmpty {
+                    print("actionId = \(actionIdentifier)")
+                }
+                completionHandler()
             }
         }
+    }
         
-        notify.onOpenSettings = { notification in
-            print("notification")
+    private func handleNotificationURL(_ url: String, completion: @escaping () -> Void) {
+        
+        print("url = \(url)")
+        DispatchQueue.main.async {
+            // 获取当前活动的 window scene
+            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                  let rootViewController = windowScene.windows.first?.rootViewController else {
+                completion()
+                return
+            }
+            
+            // 创建并展示 WebViewController
+            let webVC = WebViewController()
+            webVC.urlString = url
+            
+            // 根据当前控制器类型决定如何呈现
+            if let navController = rootViewController as? UINavigationController {
+                navController.pushViewController(webVC, animated: true)
+            } else {
+                let navController = UINavigationController(rootViewController: webVC)
+                rootViewController.present(navController, animated: true)
+            }
+            
+            completion()
         }
     }
 }

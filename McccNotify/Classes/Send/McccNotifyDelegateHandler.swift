@@ -23,8 +23,8 @@ public final class McccNotifyDelegateHandler: NSObject {
         hasSetDelegate = true
     }
 
-    private var _onReceiveResponse: ((UNNotificationResponse) -> Void)?
-    public var onReceiveResponse: ((UNNotificationResponse) -> Void)? {
+    private var _onReceiveResponse: ((UNNotificationResponse, @escaping () -> Void) -> Void)?
+    public var onReceiveResponse: ((UNNotificationResponse, @escaping () -> Void) -> Void)? {
         get { _onReceiveResponse }
         set {
             _onReceiveResponse = newValue
@@ -75,7 +75,7 @@ extension McccNotifyDelegateHandler: UNUserNotificationCenterDelegate {
     public func userNotificationCenter(_ center: UNUserNotificationCenter,
                                        didReceive response: UNNotificationResponse,
                                        withCompletionHandler completionHandler: @escaping () -> Void) {
-        onReceiveResponse?(response)
+        onReceiveResponse?(response, completionHandler)
         completionHandler()
     }
 
@@ -85,5 +85,4 @@ extension McccNotifyDelegateHandler: UNUserNotificationCenterDelegate {
             handler(notification)
         }
     }
-
 }
