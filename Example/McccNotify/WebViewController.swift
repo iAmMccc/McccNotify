@@ -19,6 +19,8 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     convenience init(url: String) {
         self.init()
         self.urlString = url
+        
+        
     }
     
     

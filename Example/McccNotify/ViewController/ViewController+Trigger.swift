@@ -62,8 +62,10 @@ extension ViewController {
                 .send()
             
         case 3:
+            
+
             // 模拟位置进入触发
-            let center = CLLocationCoordinate2D(latitude: 31.2304, longitude: 121.4737) // 上海市中心
+            let center = CLLocationCoordinate2D(latitude: 31.309343373431233, longitude: 120.77554226674485) // 2.5产业园
 
             McccNotify()
                 .content {
@@ -75,7 +77,7 @@ extension ViewController {
 
         case 4:
             // 模拟位置离开触发
-            let center = CLLocationCoordinate2D(latitude: 31.2304, longitude: 121.4737) // 上海市中心
+            let center = CLLocationCoordinate2D(latitude: 31.309343373431233, longitude: 120.77554226674485) // 2.5产业园
 
             McccNotify()
                 .content {

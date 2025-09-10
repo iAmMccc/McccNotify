@@ -9,7 +9,8 @@
 import UIKit
 import McccNotify
 import UserNotifications
-
+import MapKit
+import CoreLocation
 
 class ViewController: UIViewController {
     
@@ -36,10 +37,19 @@ class ViewController: UIViewController {
         view.addSubview(tableView)
         tableView.frame = view.bounds
         tableView.reloadData()
+        
+        locationManager.requestWhenInUseAuthorization()
     }
     
     lazy var tableView = UITableView.make(registerCells: [UITableViewCell.self], delegate: self, style: .grouped)
-    
+   
+    lazy var locationManager: CLLocationManager = {
+        let mgr = CLLocationManager()
+        mgr.desiredAccuracy = kCLLocationAccuracyBest
+        mgr.distanceFilter = 50
+        mgr.delegate = self
+        return mgr
+    }()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -64,7 +74,22 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: CLLocationManagerDelegate {
 
+    public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        print(locations.first!)
+        manager.stopUpdatingLocation()
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        manager.startUpdatingLocation()
+    }
+}
 
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -127,6 +152,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         case 3:
             didSelectSection3(atRow: indexPath.row)
         case 4:
+            locationManager.requestAlwaysAuthorization()
             didSelectSection4(atRow: indexPath.row)
         case 5:
             didSelectSection5(atRow: indexPath.row)

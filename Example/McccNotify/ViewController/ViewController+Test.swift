@@ -22,10 +22,12 @@ extension ViewController {
     
     func didSelectSection0(atRow row: Int) {
         
-        McccNotify()
-            .content {
-                $0.title("通知标题")
-            }
-            .send()
+        let vc = GeofenceSimulationViewController()
+        present(vc, animated: true)
+//        McccNotify()
+//            .content {
+//                $0.title("通知标题")
+//            }
+//            .send()
     }
 }

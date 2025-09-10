@@ -36,6 +36,7 @@
 		99765A152E1D1A9D00549DE8 /* ViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99765A142E1D1A9D00549DE8 /* ViewController+Management.swift */; };
 		99877C542E28D19100CBD09D /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 99877C4D2E28D19100CBD09D /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		99877C5A2E28EFB100CBD09D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99877C592E28EFB100CBD09D /* DetailViewController.swift */; };
+		99EE9C1B2E7188EB005C4B06 /* GeofenceTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EE9C1A2E7188EB005C4B06 /* GeofenceTestViewController.swift */; };
 		ED64E6E84F5A482074D79EB3 /* Pods_NotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41444795CC8D0EABFA4E6E1 /* Pods_NotificationService.framework */; };
 		FD448F64666DBB5B088695DF /* Pods_McccNotify_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C153858CFC2A362B8A7C23 /* Pods_McccNotify_Example.framework */; };
 /* End PBXBuildFile section */
@@ -119,6 +120,7 @@
 		99877C482E28D13F00CBD09D /* McccNotify_ExampleDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = McccNotify_ExampleDebug.entitlements; sourceTree = "<group>"; };
 		99877C4D2E28D19100CBD09D /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		99877C592E28EFB100CBD09D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = McccNotify/DetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		99EE9C1A2E7188EB005C4B06 /* GeofenceTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceTestViewController.swift; sourceTree = "<group>"; };
 		B1425DE43F866C7D0D727A07 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BC3623B29C7127081AADB707 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C55C562083607D067B9076A1 /* Pods-McccNotify_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McccNotify_Example.release.xcconfig"; path = "Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				99877C592E28EFB100CBD09D /* DetailViewController.swift */,
 				991802132E29F5A60094C64C /* WebViewController.swift */,
+				99EE9C1A2E7188EB005C4B06 /* GeofenceTestViewController.swift */,
 				99765A122E1D168200549DE8 /* ViewController */,
 				99765A112E1D166700549DE8 /* Support */,
 				99765A132E1D168D00549DE8 /* Sources */,
@@ -638,6 +641,7 @@
 				992B38742E1E8CD700BE9385 /* ViewController+ContentExtension.swift in Sources */,
 				992B386E2E1E6BA600BE9385 /* ViewController+Sound.swift in Sources */,
 				99765A0A2E1D10DD00549DE8 /* ArraySafe.swift in Sources */,
+				99EE9C1B2E7188EB005C4B06 /* GeofenceTestViewController.swift in Sources */,
 				99765A082E1D10A400549DE8 /* UITableView+Reusable.swift in Sources */,
 				99765A0E2E1D137100549DE8 /* ViewController+Authorization.swift in Sources */,
 				99765A102E1D146700549DE8 /* ViewController+Content.swift in Sources */,

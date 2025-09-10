@@ -51,6 +51,19 @@ extension McccNotify {
         /// - 使用时需确保用户授权定位权限，且 App 在后台可运行
         case locationOnExit(center: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: String, repeats: Bool = true)
 
+        /// 进入或离开地理区域触发通知
+        /// - Parameters:
+        ///   - center: 区域中心坐标（纬度经度）
+        ///   - radius: 区域半径（单位：米）
+        ///   - identifier: 区域唯一标识（建议使用有业务语义的命名）
+        ///   - repeats: 是否重复触发（通常设置为 true）
+        ///
+        /// ⚠️ 注意：
+        /// - 每个 App 最多可同时注册 20 个地理围栏（CLRegion）
+        /// - 进入和离开事件都会触发
+        /// - 使用时需确保用户授权定位权限，且 App 在后台可运行
+        case locationOnEntryOrExit(center: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: String, repeats: Bool = true)
+
 
         /// 将自定义 Trigger 枚举转换为系统的 UNNotificationTrigger
         func toUNNotificationTrigger() -> UNNotificationTrigger {
@@ -70,6 +83,12 @@ extension McccNotify {
             case let .locationOnExit(center, radius, id, repeats):
                 let region = CLCircularRegion(center: center, radius: radius, identifier: id)
                 region.notifyOnEntry = false
+                region.notifyOnExit = true
+                return UNLocationNotificationTrigger(region: region, repeats: repeats)
+                
+            case let .locationOnEntryOrExit(center, radius, id, repeats):
+                let region = CLCircularRegion(center: center, radius: radius, identifier: id)
+                region.notifyOnEntry = true
                 region.notifyOnExit = true
                 return UNLocationNotificationTrigger(region: region, repeats: repeats)
             }

@@ -13,23 +13,56 @@ import UIKit
 /// 构建通知附件的链式构造器
 public final class McccNotifyAttachment {
     private var attachments: [UNNotificationAttachment] = []
-
+    
     public init() {}
-
+    
     /// 添加已有的附件对象
     @discardableResult
     public func add(_ attachment: UNNotificationAttachment) -> Self {
         attachments.append(attachment)
         return self
     }
-
+    
     /// 添加多个附件
     @discardableResult
     public func add(_ attachments: [UNNotificationAttachment]) -> Self {
         self.attachments.append(contentsOf: attachments)
         return self
     }
-
+    
+    
+    /// 从 SF Symbol 创建通知附件（渲染为 PNG）
+    /// - Parameters:
+    ///   - systemName: SF Symbol 名称，例如 "bell.fill"
+    ///   - identifier: 附件 ID，默认 UUID
+    ///   - pointSize: 渲染尺寸（默认 100）
+    ///   - weight: 字重（默认 .regular）
+    ///   - scale: 渲染比例（默认 .default）
+    ///   - tintColor: 渲染颜色（默认黑色）
+    @discardableResult
+    public func addSFSymbol(_ name: String, tintColor: UIColor, pointSize: CGFloat = 50, identifier: String? = nil) -> Self {
+        let config = UIImage.SymbolConfiguration(pointSize: pointSize, weight: .regular)
+        guard let symbolImage = UIImage(systemName: name, withConfiguration: config)?
+            .withTintColor(tintColor, renderingMode: .alwaysOriginal),
+              let data = symbolImage.pngData() else {
+            NotifyLogger.log(level: .error, module: .attachment, message: "生成 SF Symbol PNG 失败")
+            return self
+        }
+        
+        let id = identifier ?? UUID().uuidString
+        let fileURL = FileManager.default.temporaryDirectory.appendingPathComponent("\(id).png")
+        do {
+            try? FileManager.default.removeItem(at: fileURL)
+            try data.write(to: fileURL)
+            let attachment = try UNNotificationAttachment(identifier: id, url: fileURL)
+            attachments.append(attachment)
+        } catch {
+            NotifyLogger.log(level: .error, module: .attachment, message: "生成附件失败: \(error)")
+        }
+        
+        return self
+    }
+    
     /// 从 `.xcassets` 中加载图片，并写入临时目录生成附件（转为 PNG）
     ///
     /// - Parameters:
@@ -43,10 +76,10 @@ public final class McccNotifyAttachment {
             NotifyLogger.log(level: .error, module: .attachment, message: "找不到名为 [\(name)] 的 .xcassets 图片，或无法转为 PNG。")
             return self
         }
-
+        
         let id = identifier ?? UUID().uuidString
         let fileURL = FileManager.default.temporaryDirectory.appendingPathComponent("\(id).png")
-
+        
         do {
             try? FileManager.default.removeItem(at: fileURL)
             try data.write(to: fileURL)
@@ -55,10 +88,10 @@ public final class McccNotifyAttachment {
         } catch {
             NotifyLogger.log(level: .error, module: .attachment, message: "无法将图片写入临时目录 [\(fileURL.lastPathComponent)]，错误：\(error)")
         }
-
+        
         return self
     }
-
+    
     /// 从 Bundle 中加载可访问的文件资源，并构建为通知附件
     ///
     /// - 适用于你直接拖入工程的 PNG、JPG、MP3、MP4、PDF 等资源文件（非 `.xcassets`）
@@ -73,10 +106,10 @@ public final class McccNotifyAttachment {
     public func addFile(named name: String, withExtension ext: String, identifier: String? = nil, bundle: Bundle = .main) -> Self {
         guard let url = bundle.url(forResource: name, withExtension: ext) else {
             NotifyLogger.log(level: .error, module: .attachment, message: "找不到 Bundle 文件资源：\(name).\(ext)")
-
+            
             return self
         }
-
+        
         let id = identifier ?? name
         do {
             let attachment = try UNNotificationAttachment(identifier: id, url: url)
@@ -84,10 +117,10 @@ public final class McccNotifyAttachment {
         } catch {
             NotifyLogger.log(level: .error, module: .attachment, message: "创建本地路径附件失败：\(error)")
         }
-
+        
         return self
     }
-
+    
     /// 从本地路径直接加载附件文件
     ///
     /// - Parameters:
@@ -102,7 +135,7 @@ public final class McccNotifyAttachment {
         } catch {
             NotifyLogger.log(level: .error, module: .attachment, message: "创建本地路径附件失败：\(error)")
         }
-
+        
         return self
     }
     
@@ -197,3 +230,4 @@ extension McccNotifyAttachment {
             task.resume()
         }
 }
+
