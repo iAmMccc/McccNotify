@@ -126,7 +126,7 @@
 		C55C562083607D067B9076A1 /* Pods-McccNotify_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McccNotify_Example.release.xcconfig"; path = "Target Support Files/Pods-McccNotify_Example/Pods-McccNotify_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D41444795CC8D0EABFA4E6E1 /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FA46B59F911D43F87D51E3 /* Pods-McccNotify_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McccNotify_Tests.debug.xcconfig"; path = "Target Support Files/Pods-McccNotify_Tests/Pods-McccNotify_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F970D130056E6A3F9CC7999C /* McccNotify.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = McccNotify.podspec; path = ../McccNotify.podspec; sourceTree = "<group>"; };
+		F970D130056E6A3F9CC7999C /* McccNotify.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = McccNotify.podspec; path = ../McccNotify.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FB627D12E65FB47CA66AFE7E /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

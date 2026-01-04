@@ -54,5 +54,17 @@ extension McccNotify.Authorization {
         
         UIApplication.shared.open(settingsURL)
     }
+    
+    /// 获取通知横幅风格
+    /// UNAlertStyle：
+    ///  - alert：持续的
+    ///  - banner：临时的
+    public static func alertStyle(completion: @escaping (UNAlertStyle) -> Void) {
+        UNUserNotificationCenter.current().getNotificationSettings { settings in
+            DispatchQueue.main.async {
+                completion(settings.alertStyle)
+            }
+        }
+    }
 }
 
