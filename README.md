@@ -15,7 +15,27 @@
 
 ## 安装
 
-`pod 'McccNotify'`
+### CocoaPods
+
+```ruby
+pod 'McccNotify'
+```
+
+### Swift Package Manager
+
+在 Xcode 中：**File → Add Package Dependencies**，输入仓库地址：
+
+```
+https://github.com/iAmMccc/McccNotify
+```
+
+或在 `Package.swift` 中添加依赖：
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/iAmMccc/McccNotify.git", from: "1.0.3")
+]
+```
 
 
 
